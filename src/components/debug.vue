@@ -1,5 +1,5 @@
 <template>
-    <button v-on:click="prefilSomeValues()">Prefil some values</button>
+    <button v-on:click="prefilSomeValuesLite()">Prefil some values</button>
 </template>
 
 <script>
@@ -9,7 +9,7 @@
     export default {
         methods: {
     
-            prefilSomeValues() {
+            prefilSomeValuesFull() {
                 // Person
                 this.$store.commit('inputCurrentRent', 400)
                 // Apartment
@@ -33,6 +33,15 @@
     
                 // Invest
                 this.$store.commit('inputInvestInterest', 6)
+            },
+            prefilSomeValuesLite() {
+                // Apartment
+                this.$store.commit('inputPurchasePrice', 100000)
+                this.$store.commit('inputRentalIncome', 600)
+    
+                // Loan
+                this.$store.commit('inputSelfCaptive', 30000)
+                this.$store.commit('inputRuntime', 25)
             }
         }
     }
