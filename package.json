@@ -7,7 +7,8 @@
     "scripts": {
         "start": "npm run build && node server.js",
         "dev": "parcel index.html --out-dir build/dev",
-        "build": "parcel build index.html --out-dir build/dist --detailed-report --no-minify"
+        "build": "parcel build index.html --out-dir build/dist --detailed-report --no-minify",
+        "prebuild": "rm -rf build/dist"
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.1.0",
