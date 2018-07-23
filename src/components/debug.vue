@@ -1,10 +1,5 @@
 <template>
-    <div id="debug" class="row">
-        <div class="col">
-            Use <a href="https://github.com/vuejs/vue-devtools">Vue Devtools</a>
-            <button v-on:click="prefilSomeValues()">Prefil some values</button>
-        </div>
-    </div>
+    <button v-on:click="prefilSomeValues()">Prefil some values</button>
 </template>
 
 <script>
@@ -43,8 +38,11 @@
     }
 </script>
 
-<style>
+<style scoped>
     div#debug {
         border: 1px solid blue;
+    }
+    button {
+        font-size: 1rem;
     }
 </style>

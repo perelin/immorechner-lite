@@ -6,7 +6,6 @@
     <stage-component />
     <div id="app" class="container">
       <dialog-component />
-      <debug-component />
     </div>
     <footer-component />
   </div>
@@ -17,7 +16,7 @@
   import DialogComponent from './components/dialog.vue'
   import HeaderComponent from './components/header.vue'
   import FooterComponent from './components/footer.vue'
-  import DebugComponent from './components/debug.vue'
+
   
   export default {
     name: 'app',
@@ -30,8 +29,7 @@
       StageComponent,
       DialogComponent,
       HeaderComponent,
-      FooterComponent,
-      DebugComponent
+      FooterComponent
     }
   }
 </script>

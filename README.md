@@ -22,13 +22,15 @@ For detailed explanation on how things work, consult the [docs for vue-loader](h
 ## Dev Notes
 
 
-ttps://github.com/vuejs-templates/webpack-simple 
+https://github.com/vuejs-templates/webpack-simple 
 
 https://vuejs.org/v2/guide/single-file-components.html
 
 https://coolors.co/2e5266-6e8898-9fb1bc-d3d0cb-e2c044
 
 https://fontawesome.com/how-to-use/on-the-web/using-with/vuejs
+
+https://stackoverflow.com/questions/149055/how-can-i-format-numbers-as-dollars-currency-string-in-javascript?page=1&tab=votes#tab-top
 
 ### Important
 

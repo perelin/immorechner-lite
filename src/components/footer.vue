@@ -12,7 +12,7 @@
         min-height: 100%;
     }
     
-    body {
+    body#immorechner {
         margin-bottom: 60px;
         /* Margin bottom by footer height */
     }
