@@ -7407,6 +7407,9 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
 
 exports.default = {
     methods: {
@@ -7423,7 +7426,7 @@ exports.default = {
     
         /* template */
         Object.assign($0acfa5, (function () {
-          var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"jumbotron text-light"},[_c('h1',{staticClass:"display-4"},[_vm._v("Immo­Rechner\n        "),_c('font-awesome-icon',{attrs:{"icon":"home"}})],1),_vm._v(" "),_c('p',{staticClass:"lead"},[_vm._v("Die Einschätzung für Deinen Immo-Invest: Lohnt sich das? Wie hoch ist die Rendite? Was sind die Alternativen?")]),_vm._v(" "),_c('hr',{staticClass:"my-4"}),_vm._v(" "),_c('p',[_vm._v("Schnell und einfach zum Ergebnis. Einfach unten im Text die markierten Werte für deinen Immo-Invest anpassen und sofort die erste Einschätzung bekommen. Reicht nicht? Dann einfach alles bis ins kleinste Detail nachjustieren.")]),_vm._v(" "),_c('p',{staticClass:"lead"},[_c('a',{staticClass:"btn btn-primary btn-lg",attrs:{"href":"#dialog","role":"button"}},[_vm._v("Jetzt starten")]),_vm._v(" "),_c('button',{on:{"click":_vm.increment}},[_vm._v("+")])])])}
+          var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"jumbotron text-light"},[_c('div',{staticClass:"card col-md-6",attrs:{"id":"stage"}},[_c('h1',{staticClass:"display-4"},[_vm._v("Immo­Rechner\n            "),_c('font-awesome-icon',{attrs:{"icon":"home"}})],1),_vm._v(" "),_c('p',{staticClass:"lead"},[_vm._v("Die Einschätzung für Deinen Immo-Invest: Lohnt sich das? Wie hoch ist die Rendite? Was sind die Alternativen?")]),_vm._v(" "),_c('hr'),_vm._v(" "),_c('p',[_vm._v("Schnell und einfach zum Ergebnis. Einfach unten im Text die markierten Werte für deinen Immo-Invest anpassen und sofort die erste Einschätzung bekommen. Reicht nicht? Dann einfach alles bis ins kleinste Detail nachjustieren.")]),_vm._v(" "),_c('p',{staticClass:"lead"},[_c('a',{staticClass:"btn btn-primary btn-lg",attrs:{"href":"#dialog","role":"button"}},[_vm._v("Jetzt starten")]),_vm._v(" "),_c('button',{on:{"click":_vm.increment}},[_vm._v("+")])])])])}
 var staticRenderFns = []
 
           return {
@@ -33510,4 +33513,4 @@ new _vue2.default({
     }
 });
 },{"vue":"4673","./app.vue":"wlok","./store":"47HK","bootstrap-vue":"h7pH","bootstrap/dist/css/bootstrap.css":"zxpP","bootstrap-vue/dist/bootstrap-vue.css":"zxpP","@fortawesome/fontawesome-svg-core":"FlFf","@fortawesome/free-solid-svg-icons":"yAA2","@fortawesome/vue-fontawesome":"m8Qn"}]},{},["vZyd"], null)
-//# sourceMappingURL=/app.84bc3473.map
+//# sourceMappingURL=/app.be9fd16c.map

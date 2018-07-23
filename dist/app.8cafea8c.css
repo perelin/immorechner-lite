@@ -2,6 +2,11 @@
     background-image: url('sorasak-587984-unsplash.e3d67d35.jpg');
     background-size: cover;
 }
+
+#stage.card {
+    background: rgba(122, 130, 136, 0.6)!important;
+    padding: 2rem;
+}
 input.form-control[data-v-f7dd6c] {
     border-width: 0px;
     border-bottom-width: 1px;
