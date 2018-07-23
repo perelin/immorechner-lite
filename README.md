@@ -21,13 +21,19 @@ For detailed explanation on how things work, consult the [docs for vue-loader](h
 
 ## Dev Notes
 
-https://github.com/vuejs-templates/webpack-simple 
+
+ttps://github.com/vuejs-templates/webpack-simple 
 
 https://vuejs.org/v2/guide/single-file-components.html
 
 https://coolors.co/2e5266-6e8898-9fb1bc-d3d0cb-e2c044
 
 https://fontawesome.com/how-to-use/on-the-web/using-with/vuejs
+
+### Important
+
+https://github.com/parcel-bundler/parcel/issues/1363 
+https://github.com/parcel-bundler/parcel/issues/1234
 
 ### Parcel instead of Webpack
 

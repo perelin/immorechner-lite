@@ -6,9 +6,9 @@
     "private": true,
     "scripts": {
         "start": "npm run build && node server.js",
-        "dev": "parcel index.html --out-dir build/dev",
-        "build": "parcel build index.html --out-dir build/dist --detailed-report --no-minify",
-        "prebuild": "rm -rf build/dist"
+        "dev": "parcel index.html --out-dir dist_dev",
+        "build": "parcel build index.html --out-dir dist --detailed-report --no-minify",
+        "prebuild": "rm -rf dist"
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.1.0",
