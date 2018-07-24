@@ -49,12 +49,21 @@
                     <small id="rentalIncomeHelp" class="form-text text-muted">Die erwartete Netto-Kaltmiete.</small>
                 </div>
             </form>
+
+            <p>
+
+            </p>
+        </div>
+
+        <div class="card-footer bg-transparent ">
+            <dialog-data-details-component />
         </div>
     </div>
 </div>
 </template>
 
 <script>
+import DialogDataDetailsComponent from './dialog_data_details'
 import {
     mapState
 } from 'vuex'
@@ -79,6 +88,9 @@ export default {
         inputRentalIncome(event) {
             this.$store.commit('inputRentalIncome', +event.target.value)
         },
+    },
+    components: {
+        DialogDataDetailsComponent
     }
 }
 </script>

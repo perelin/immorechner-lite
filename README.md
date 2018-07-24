@@ -39,6 +39,9 @@ https://fontawesome.com/how-to-use/on-the-web/using-with/vuejs
 
 https://stackoverflow.com/questions/149055/how-can-i-format-numbers-as-dollars-currency-string-in-javascript?page=1&tab=votes#tab-top
 
+https://babeljs.io/docs/en/babel-plugin-transform-object-rest-spread/
+https://vuex.vuejs.org/guide/state.html#object-spread-operator
+
 ### Important
 
 https://github.com/parcel-bundler/parcel/issues/1363 

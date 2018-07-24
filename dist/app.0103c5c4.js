@@ -7519,7 +7519,32 @@ var staticRenderFns = []
           };
         })());
       
-},{"./debug.vue":"sVTN","./../assets/stage_01.jpg":[["stage_01.55ac0244.jpg","NlQ8"],"NlQ8"]}],"AwB4":[function(require,module,exports) {
+},{"./debug.vue":"sVTN","./../assets/stage_01.jpg":[["stage_01.55ac0244.jpg","NlQ8"],"NlQ8"]}],"9jkT":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = {
+    format2Eur: function format2Eur(number) {
+        return number.toLocaleString("de-DE", { style: "currency", currency: "EUR", minimumFractionDigits: 2 });
+    },
+    formatEuroMixin: {
+        methods: {
+            formatEuro: function formatEuro(number) {
+                return number.toLocaleString("de-DE", { style: "currency", currency: "EUR", minimumFractionDigits: 2 });
+            }
+        }
+    },
+    formatPercentMixin: {
+        methods: {
+            formatPercent: function formatPercent(value) {
+                return Number(value / 100).toLocaleString(undefined, { style: 'percent', minimumFractionDigits: 2 });
+            }
+        }
+    }
+};
+},{}],"AwB4":[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -8477,14 +8502,143 @@ exports.mapGetters = mapGetters;
 exports.mapActions = mapActions;
 exports.createNamespacedHelpers = createNamespacedHelpers;
 exports.default = index_esm;
-},{}],"V43m":[function(require,module,exports) {
+},{}],"MNvt":[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; //
+//
+//
+//
+
+var _immorechner_util = require('../utils/immorechner_util.js');
+
+var _immorechner_util2 = _interopRequireDefault(_immorechner_util);
+
 var _vuex = require('vuex');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = {
+    computed: _extends({
+        burdenPerMonthLetting: function burdenPerMonthLetting() {
+            var burden = _immorechner_util2.default.format2Eur(this.$store.getters.burdenPerMonthLetting);
+            return burden;
+        },
+        cashflow: function cashflow() {
+            var cashflow = 'negative';
+            if (this.$store.getters.burdenPerMonthLetting > 0) {
+                cashflow = 'positiv';
+            }
+            return cashflow;
+        },
+        courtagePercentFormated: function courtagePercentFormated() {
+            return courtage;
+        }
+    }, (0, _vuex.mapState)(['courtage']))
+};
+        var $8b9319 = exports.default || module.exports;
+      
+      if (typeof $8b9319 === 'function') {
+        $8b9319 = $8b9319.options;
+      }
+    
+        /* template */
+        Object.assign($8b9319, (function () {
+          var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('small',{staticClass:"text-muted"},[_vm._v("Um Dinge einfach zu halten und eine schnellen Einstieg zu ermöglichen haben wir ein einige Annahmen getroffen. U.a.: Marklergebühr "+_vm._s(_vm.formatPercent(_vm.courtage))+", Grunderwerbssteuer 6,00%, Notar- u. Grundbuchkosten 2,00%, Einmalige Renovierungsarbeiten 15.000€, Darlehnszins p.a. 2,00%, Nicht umlegbarer Hausgeldanteil: 80 €, monatliche Rücklagen für Reparaturen: 15 €. "),_c('a',{attrs:{"href":"#"}},[_vm._v("Hier können Sie diese Werte im Detail anpassen")])])}
+var staticRenderFns = []
+
+          return {
+            render: render,
+            staticRenderFns: staticRenderFns,
+            _compiled: true,
+            _scopeId: "data-v-8b9319",
+            functional: undefined
+          };
+        })());
+      
+},{"../utils/immorechner_util.js":"9jkT","vuex":"AwB4"}],"V43m":[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _dialog_data_details = require('./dialog_data_details');
+
+var _dialog_data_details2 = _interopRequireDefault(_dialog_data_details);
+
+var _vuex = require('vuex');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 exports.default = {
     computed: (0, _vuex.mapState)({
@@ -8506,63 +8660,11 @@ exports.default = {
         inputRentalIncome: function inputRentalIncome(event) {
             this.$store.commit('inputRentalIncome', +event.target.value);
         }
+    },
+    components: {
+        DialogDataDetailsComponent: _dialog_data_details2.default
     }
-}; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+};
         var $aa8f85 = exports.default || module.exports;
       
       if (typeof $aa8f85 === 'function') {
@@ -8571,7 +8673,7 @@ exports.default = {
     
         /* template */
         Object.assign($aa8f85, (function () {
-          var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('div',{staticClass:"card"},[_vm._m(0),_vm._v(" "),_c('div',{staticClass:"card-body"},[_c('form',[_c('div',{staticClass:"form-group"},[_c('label',{attrs:{"for":"purchasePrice"}},[_vm._v("Kaufpreis")]),_vm._v(" "),_c('div',{staticClass:"input-group"},[_c('input',{staticClass:"form-control",attrs:{"type":"number","id":"purchasePrice","placeholder":"85000","step":"1000"},domProps:{"value":_vm.purchasePrice},on:{"input":_vm.inputPurchasePrice}}),_vm._v(" "),_vm._m(1)]),_vm._v(" "),_c('small',{staticClass:"form-text text-muted",attrs:{"id":"purchasePriceHelp"}},[_vm._v("Der Kaufpreis der Immobilie.")])]),_vm._v(" "),_c('div',{staticClass:"form-group"},[_c('label',{attrs:{"for":"selfCaptive"}},[_vm._v("Eigenkapital")]),_vm._v(" "),_c('div',{staticClass:"input-group"},[_c('input',{staticClass:"form-control",attrs:{"type":"number","id":"selfCaptive"},domProps:{"value":_vm.selfCaptive},on:{"input":_vm.inputSelfCaptive}}),_vm._v(" "),_vm._m(2)]),_vm._v(" "),_c('small',{staticClass:"form-text text-muted",attrs:{"id":"selfCaptiveHelp"}},[_vm._v("Die Startinvestition aus eigenem Kapital.")])]),_vm._v(" "),_c('div',{staticClass:"form-group"},[_c('label',{attrs:{"for":"runtime"}},[_vm._v("Laufzeit")]),_vm._v(" "),_c('div',{staticClass:"input-group"},[_c('input',{staticClass:"form-control",attrs:{"type":"number","id":"runtime"},domProps:{"value":_vm.runtime},on:{"input":_vm.inputRuntime}}),_vm._v(" "),_vm._m(3)]),_vm._v(" "),_c('small',{staticClass:"form-text text-muted",attrs:{"id":"runtimeHelp"}},[_vm._v("Die Laufzeit des Kredites.")])]),_vm._v(" "),_c('div',{staticClass:"form-group"},[_c('label',{attrs:{"for":"rentalIncome"}},[_vm._v("Kaltmiete")]),_vm._v(" "),_c('div',{staticClass:"input-group"},[_c('input',{staticClass:"form-control",attrs:{"type":"number","id":"rentalIncome"},domProps:{"value":_vm.rentalIncome},on:{"input":_vm.inputRentalIncome}}),_vm._v(" "),_vm._m(4)]),_vm._v(" "),_c('small',{staticClass:"form-text text-muted",attrs:{"id":"rentalIncomeHelp"}},[_vm._v("Die erwartete Netto-Kaltmiete.")])])])])])])}
+          var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('div',{staticClass:"card"},[_vm._m(0),_vm._v(" "),_c('div',{staticClass:"card-body"},[_c('form',[_c('div',{staticClass:"form-group"},[_c('label',{attrs:{"for":"purchasePrice"}},[_vm._v("Kaufpreis")]),_vm._v(" "),_c('div',{staticClass:"input-group"},[_c('input',{staticClass:"form-control",attrs:{"type":"number","id":"purchasePrice","placeholder":"85000","step":"1000"},domProps:{"value":_vm.purchasePrice},on:{"input":_vm.inputPurchasePrice}}),_vm._v(" "),_vm._m(1)]),_vm._v(" "),_c('small',{staticClass:"form-text text-muted",attrs:{"id":"purchasePriceHelp"}},[_vm._v("Der Kaufpreis der Immobilie.")])]),_vm._v(" "),_c('div',{staticClass:"form-group"},[_c('label',{attrs:{"for":"selfCaptive"}},[_vm._v("Eigenkapital")]),_vm._v(" "),_c('div',{staticClass:"input-group"},[_c('input',{staticClass:"form-control",attrs:{"type":"number","id":"selfCaptive"},domProps:{"value":_vm.selfCaptive},on:{"input":_vm.inputSelfCaptive}}),_vm._v(" "),_vm._m(2)]),_vm._v(" "),_c('small',{staticClass:"form-text text-muted",attrs:{"id":"selfCaptiveHelp"}},[_vm._v("Die Startinvestition aus eigenem Kapital.")])]),_vm._v(" "),_c('div',{staticClass:"form-group"},[_c('label',{attrs:{"for":"runtime"}},[_vm._v("Laufzeit")]),_vm._v(" "),_c('div',{staticClass:"input-group"},[_c('input',{staticClass:"form-control",attrs:{"type":"number","id":"runtime"},domProps:{"value":_vm.runtime},on:{"input":_vm.inputRuntime}}),_vm._v(" "),_vm._m(3)]),_vm._v(" "),_c('small',{staticClass:"form-text text-muted",attrs:{"id":"runtimeHelp"}},[_vm._v("Die Laufzeit des Kredites.")])]),_vm._v(" "),_c('div',{staticClass:"form-group"},[_c('label',{attrs:{"for":"rentalIncome"}},[_vm._v("Kaltmiete")]),_vm._v(" "),_c('div',{staticClass:"input-group"},[_c('input',{staticClass:"form-control",attrs:{"type":"number","id":"rentalIncome"},domProps:{"value":_vm.rentalIncome},on:{"input":_vm.inputRentalIncome}}),_vm._v(" "),_vm._m(4)]),_vm._v(" "),_c('small',{staticClass:"form-text text-muted",attrs:{"id":"rentalIncomeHelp"}},[_vm._v("Die erwartete Netto-Kaltmiete.")])])]),_vm._v(" "),_c('p')]),_vm._v(" "),_c('div',{staticClass:"card-footer bg-transparent "},[_c('dialog-data-details-component')],1)])])}
 var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"card-header"},[_vm._v("\n            Daten "),_c('br'),_vm._v(" "),_c('small',{staticClass:"text-muted mb-3"},[_vm._v("Alle Daten zu Ihrem Investment. Kosten, Kredit, etc.")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"input-group-append"},[_c('span',{staticClass:"input-group-text"},[_vm._v("€")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"input-group-append"},[_c('span',{staticClass:"input-group-text"},[_vm._v("€")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"input-group-append"},[_c('span',{staticClass:"input-group-text"},[_vm._v("Jahre")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"input-group-append"},[_c('span',{staticClass:"input-group-text"},[_vm._v("€")])])}]
 
           return {
@@ -8583,35 +8685,38 @@ var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _
           };
         })());
       
-},{"vuex":"AwB4"}],"9jkT":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = {
-    format2Eur: function format2Eur(number) {
-        return number.toLocaleString("de-DE", { style: "currency", currency: "EUR", minimumFractionDigits: 2 });
-    }
-};
-},{}],"Y2/t":[function(require,module,exports) {
+},{"./dialog_data_details":"MNvt","vuex":"AwB4"}],"Y2/t":[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-
-var _immorechner_util = require('../utils/immorechner_util.js');
-
-var _immorechner_util2 = _interopRequireDefault(_immorechner_util);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 exports.default = {
     computed: {
         burdenPerMonthLetting: function burdenPerMonthLetting() {
-            var burden = _immorechner_util2.default.format2Eur(this.$store.getters.burdenPerMonthLetting);
-            return burden;
+            return this.$store.getters.burdenPerMonthLetting;
         },
         cashflow: function cashflow() {
             var cashflow = 'negative';
@@ -8621,27 +8726,7 @@ exports.default = {
             return cashflow;
         }
     }
-}; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+};
         var $ac36fa = exports.default || module.exports;
       
       if (typeof $ac36fa === 'function') {
@@ -8650,7 +8735,7 @@ exports.default = {
     
         /* template */
         Object.assign($ac36fa, (function () {
-          var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('div',{staticClass:"card"},[_vm._m(0),_vm._v(" "),_c('div',{staticClass:"card-body"},[_c('div',{staticClass:"card text-white bg-success mb-3",staticStyle:{"max-width":"18rem"}},[_c('div',{staticClass:"card-header"},[_vm._v("Cashflow: "+_vm._s(_vm.cashflow))]),_vm._v(" "),_c('div',{staticClass:"card-body"},[_c('h5',{staticClass:"card-title"},[_vm._v(_vm._s(_vm.burdenPerMonthLetting))]),_vm._v(" im Monat\n                ")])])])])])}
+          var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('div',{staticClass:"card"},[_vm._m(0),_vm._v(" "),_c('div',{staticClass:"card-body"},[_c('div',{staticClass:"card text-white bg-success mb-3",staticStyle:{"max-width":"18rem"}},[_c('div',{staticClass:"card-header"},[_vm._v("Cashflow: "+_vm._s(_vm.cashflow))]),_vm._v(" "),_c('div',{staticClass:"card-body"},[_c('h5',{staticClass:"card-title"},[_vm._v(_vm._s(_vm.formatEuro(_vm.burdenPerMonthLetting)))]),_vm._v(" im Monat\n                ")])])])])])}
 var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"card-header"},[_vm._v("\n            Tilgung "),_c('br'),_vm._v(" "),_c('small',{staticClass:"text-muted mb-3"},[_vm._v("Wie sehen Ihre Finanzen während der Tilgungsphase aus? Ist der Cashflow positiv oder negative?")])])}]
 
           return {
@@ -8662,7 +8747,7 @@ var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _
           };
         })());
       
-},{"../utils/immorechner_util.js":"9jkT"}],"/B86":[function(require,module,exports) {
+},{}],"/B86":[function(require,module,exports) {
 
         var $15b4d2 = exports.default || module.exports;
       
@@ -33758,12 +33843,17 @@ var _freeSolidSvgIcons = require('@fortawesome/free-solid-svg-icons');
 
 var _vueFontawesome = require('@fortawesome/vue-fontawesome');
 
+var _immorechner_util = require('./utils/immorechner_util');
+
+var _immorechner_util2 = _interopRequireDefault(_immorechner_util);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _fontawesomeSvgCore.library.add(_freeSolidSvgIcons.faHome);
 
 _vue2.default.component('font-awesome-icon', _vueFontawesome.FontAwesomeIcon);
-
+_vue2.default.mixin(_immorechner_util2.default.formatPercentMixin);
+_vue2.default.mixin(_immorechner_util2.default.formatEuroMixin);
 _vue2.default.use(_bootstrapVue2.default);
 
 new _vue2.default({
@@ -33773,5 +33863,5 @@ new _vue2.default({
         return h(_app2.default);
     }
 });
-},{"vue":"4673","./app.vue":"wlok","./store":"47HK","bootstrap/dist/css/bootstrap.css":"1gsg","bootstrap-vue/dist/bootstrap-vue.css":"1gsg","bootstrap-vue":"h7pH","@fortawesome/fontawesome-svg-core":"FlFf","@fortawesome/free-solid-svg-icons":"yAA2","@fortawesome/vue-fontawesome":"m8Qn"}]},{},["vZyd"], null)
-//# sourceMappingURL=/app.655c1e64.map
+},{"vue":"4673","./app.vue":"wlok","./store":"47HK","bootstrap/dist/css/bootstrap.css":"1gsg","bootstrap-vue/dist/bootstrap-vue.css":"1gsg","bootstrap-vue":"h7pH","@fortawesome/fontawesome-svg-core":"FlFf","@fortawesome/free-solid-svg-icons":"yAA2","@fortawesome/vue-fontawesome":"m8Qn","./utils/immorechner_util":"9jkT"}]},{},["vZyd"], null)
+//# sourceMappingURL=/app.6a02a4a5.map
