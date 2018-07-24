@@ -1,17 +1,19 @@
 <template>
 <div>
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-lg-3 mb-3">
             <dialog-data-component />
         </div>
 
-        <div class="col-md-3">
+        <div class="col-lg-3 mb-3">
             <dialog-payback-component />
         </div>
-        <div class="col-md-3">
+
+        <div class="col-lg-3 mb-3">
             <dialog-return-component />
         </div>
-        <div class="col-md-3">
+        
+        <div class="col-lg-3 mb-3">
             <dialog-ownership-component />
         </div>
     </div>

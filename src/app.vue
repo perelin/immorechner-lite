@@ -1,10 +1,10 @@
 <template>
-<div>
+<div id="app">
     <header>
         <header-component />
     </header>
     <stage-component />
-    <div id="app" class="container">
+    <div class="container-fluid">
         <dialog-component />
     </div>
     <footer-component />

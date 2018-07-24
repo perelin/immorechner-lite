@@ -8751,6 +8751,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
+//
+//
 
 exports.default = {
     components: {
@@ -8768,7 +8770,7 @@ exports.default = {
     
         /* template */
         Object.assign($f7dd6c, (function () {
-          var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('div',{staticClass:"row"},[_c('div',{staticClass:"col-md-3"},[_c('dialog-data-component')],1),_vm._v(" "),_c('div',{staticClass:"col-md-3"},[_c('dialog-payback-component')],1),_vm._v(" "),_c('div',{staticClass:"col-md-3"},[_c('dialog-return-component')],1),_vm._v(" "),_c('div',{staticClass:"col-md-3"},[_c('dialog-ownership-component')],1)])])}
+          var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('div',{staticClass:"row"},[_c('div',{staticClass:"col-lg-3 mb-3"},[_c('dialog-data-component')],1),_vm._v(" "),_c('div',{staticClass:"col-lg-3 mb-3"},[_c('dialog-payback-component')],1),_vm._v(" "),_c('div',{staticClass:"col-lg-3 mb-3"},[_c('dialog-return-component')],1),_vm._v(" "),_c('div',{staticClass:"col-lg-3 mb-3"},[_c('dialog-ownership-component')],1)])])}
 var staticRenderFns = []
 
           return {
@@ -8912,7 +8914,7 @@ exports.default = {
     
         /* template */
         Object.assign($c5248a, (function () {
-          var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('header',[_c('header-component')],1),_vm._v(" "),_c('stage-component'),_vm._v(" "),_c('div',{staticClass:"container",attrs:{"id":"app"}},[_c('dialog-component')],1),_vm._v(" "),_c('footer-component')],1)}
+          var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"app"}},[_c('header',[_c('header-component')],1),_vm._v(" "),_c('stage-component'),_vm._v(" "),_c('div',{staticClass:"container-fluid"},[_c('dialog-component')],1),_vm._v(" "),_c('footer-component')],1)}
 var staticRenderFns = []
 
           return {
@@ -33772,4 +33774,4 @@ new _vue2.default({
     }
 });
 },{"vue":"4673","./app.vue":"wlok","./store":"47HK","bootstrap/dist/css/bootstrap.css":"1gsg","bootstrap-vue/dist/bootstrap-vue.css":"1gsg","bootstrap-vue":"h7pH","@fortawesome/fontawesome-svg-core":"FlFf","@fortawesome/free-solid-svg-icons":"yAA2","@fortawesome/vue-fontawesome":"m8Qn"}]},{},["vZyd"], null)
-//# sourceMappingURL=/app.8f7be316.map
+//# sourceMappingURL=/app.655c1e64.map
