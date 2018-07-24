@@ -37,7 +37,7 @@ export default {
             // Apartment
             this.$store.commit('inputCourtage', 2)
             this.$store.commit('inputSquareMeters', 60)
-            this.$store.commit('inputRenovationCost', 1000)
+            this.$store.commit('inputRenovationCost', 2000)
             this.$store.commit('inputRenovationCostPerMonth', 20)
             this.$store.commit('inputHouseMoney', 100)
             this.$store.commit('inputHouseMoneyFoldable', 66)

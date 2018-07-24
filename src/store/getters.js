@@ -48,6 +48,9 @@ export default {
         return monthlyInterests
     },
     // Basic Letting
+    houseMoneyNotFoldable(state, getters) {
+        return state.houseMoney - state.houseMoneyFoldable
+    },
     totalRenovationCostPerMonth(state, getters) {
         return state.renovationCostPerMonth * state.squareMeters / 12
     },
