@@ -1,10 +1,8 @@
 # immorechner-lite
 
-> A Vue.js project
+...
 
 ## Build Setup
-
-parcel index.html 
 
 ``` bash
 # install dependencies
@@ -18,6 +16,15 @@ npm run build
 ```
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+## Todos
+
+- Default Einstellungen anzeigen
+- Default ändern lassen
+- Rendite  
+- Steuern
+- Grafik?
+- 
 
 ## Dev Notes
 
