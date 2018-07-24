@@ -50,6 +50,7 @@ https://devcenter.heroku.com/articles/dyno-metadata
 https://stackoverflow.com/questions/48009893/expose-environment-in-parceljs
 https://github.com/parcel-bundler/parcel/issues/702
 
+https://stackoverflow.com/questions/18672452/left-align-and-right-align-within-div-in-bootstrap
 
 
 ### Important

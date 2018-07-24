@@ -1,7 +1,7 @@
 <template>
 <footer class="footer bg-primary">
-    <div class="container">
-        <span class="text-light">&copy; 2018 ImmoRechner</span> {{ versionFromEnv }}
+    <div class="container d-flex">
+        <div class="text-light">&copy; 2018 ImmoRechner</div> <small class="ml-auto">{{ versionFromEnv }}</small>
     </div>
 </footer>
 </template>

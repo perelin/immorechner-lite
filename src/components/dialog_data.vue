@@ -43,7 +43,7 @@
                     <div class="input-group">
                         <input type="number" pattern="[0-9]*" class="form-control" id="rentalIncome" :value="rentalIncome" @input="inputRentalIncome">
                         <div class="input-group-append">
-                            <span class="input-group-text">€</span>
+                            <span class="input-group-text">€ / Monat</span>
                         </div>
                     </div>
                     <small id="rentalIncomeHelp" class="form-text text-muted">Die erwartete Netto-Kaltmiete.</small>
