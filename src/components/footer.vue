@@ -30,9 +30,9 @@ export default {
         }
     },
     mounted: function () {
-        console.log(process.env.HEROKU_RELEASE_VERSION)
+        //console.log(process.env.HEROKU_RELEASE_VERSION)
         var self = this
-        self.getVersion()
+        //self.getVersion()
     }
 }
 </script>
