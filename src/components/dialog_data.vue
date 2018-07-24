@@ -11,7 +11,7 @@
                 <div class="form-group">
                     <label for="purchasePrice">Kaufpreis</label>
                     <div class="input-group">
-                        <input type="number" class="form-control" id="purchasePrice" :value="purchasePrice" @input="inputPurchasePrice" placeholder="85000" step="1000">
+                        <input type="number" pattern="[0-9]*" class="form-control" id="purchasePrice" :value="purchasePrice" @input="inputPurchasePrice" placeholder="85000" step="1000">
                         <div class="input-group-append">
                             <span class="input-group-text">€</span>
                         </div>
@@ -21,7 +21,7 @@
                 <div class="form-group">
                     <label for="selfCaptive">Eigenkapital</label>
                     <div class="input-group">
-                        <input type="number" class="form-control" id="selfCaptive" :value="selfCaptive" @input="inputSelfCaptive">
+                        <input type="number" pattern="[0-9]*" class="form-control" id="selfCaptive" :value="selfCaptive" @input="inputSelfCaptive">
                         <div class="input-group-append">
                             <span class="input-group-text">€</span>
                         </div>
@@ -31,7 +31,7 @@
                 <div class="form-group">
                     <label for="runtime">Laufzeit</label>
                     <div class="input-group">
-                        <input type="number" class="form-control" id="runtime" :value="runtime" @input="inputRuntime">
+                        <input type="number" pattern="[0-9]*" class="form-control" id="runtime" :value="runtime" @input="inputRuntime">
                         <div class="input-group-append">
                             <span class="input-group-text">Jahre</span>
                         </div>
@@ -41,7 +41,7 @@
                 <div class="form-group">
                     <label for="rentalIncome">Kaltmiete</label>
                     <div class="input-group">
-                        <input type="number" class="form-control" id="rentalIncome" :value="rentalIncome" @input="inputRentalIncome">
+                        <input type="number" pattern="[0-9]*" class="form-control" id="rentalIncome" :value="rentalIncome" @input="inputRentalIncome">
                         <div class="input-group-append">
                             <span class="input-group-text">€</span>
                         </div>

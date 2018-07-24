@@ -24,7 +24,8 @@ For detailed explanation on how things work, consult the [docs for vue-loader](h
 - Rendite  
 - Steuern
 - Grafik?
-- 
+- Persistance -> https://alligator.io/vuejs/vuex-persist-state/ 
+
 
 ## Dev Notes
 
@@ -41,6 +42,10 @@ https://stackoverflow.com/questions/149055/how-can-i-format-numbers-as-dollars-c
 
 https://babeljs.io/docs/en/babel-plugin-transform-object-rest-spread/
 https://vuex.vuejs.org/guide/state.html#object-spread-operator
+
+https://stackoverflow.com/questions/14447668/input-type-number-is-not-showing-a-number-keypad-on-ios
+
+https://devcenter.heroku.com/articles/dyno-metadata
 
 ### Important
 
