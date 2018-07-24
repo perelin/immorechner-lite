@@ -1,7 +1,7 @@
 <template>
 <footer class="footer bg-primary">
     <div class="container">
-        <span class="text-light">&copy; 2018 ImmoRechner</span> {{ version }}
+        <span class="text-light">&copy; 2018 ImmoRechner</span> {{ versionFromEnv }}
     </div>
 </footer>
 </template>
@@ -12,7 +12,8 @@ import axios from 'axios';
 export default {
     data() {
         return {
-            version: ''
+            version: '',
+            versionFromEnv: process.env.HEROKU_APP_NAME + ' ' + process.env.HEROKU_RELEASE_VERSION
         }
     },
     methods: {
@@ -24,10 +25,12 @@ export default {
                     console.log(response.data)
                 }, (error) => {
                     console.log('error while getting version')
-                })
+                    console.log(error)
+                    })
         }
     },
     mounted: function () {
+        console.log(process.env.HEROKU_RELEASE_VERSION)
         var self = this
         self.getVersion()
     }

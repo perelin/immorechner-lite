@@ -47,6 +47,11 @@ https://stackoverflow.com/questions/14447668/input-type-number-is-not-showing-a-
 
 https://devcenter.heroku.com/articles/dyno-metadata
 
+https://stackoverflow.com/questions/48009893/expose-environment-in-parceljs
+https://github.com/parcel-bundler/parcel/issues/702
+
+
+
 ### Important
 
 https://github.com/parcel-bundler/parcel/issues/1363 
