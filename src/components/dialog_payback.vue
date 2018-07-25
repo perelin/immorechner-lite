@@ -13,6 +13,7 @@
                     <h5 class="card-title">{{formatEuro(burdenPerMonthLetting)}}</h5> im Monat
                 </div>
             </div>
+            + Tortendiagram Zusammensetzung / Anteile: Kredibelastung (Tilgung/Zinsen), Hausgeld, Steuern, etc 
         </div>
 
     </div>

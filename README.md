@@ -2,6 +2,12 @@
 
 ...
 
+LohntSichDas.de/Immobilie
+LohntSichDas.de/Rente
+...
+
+
+
 ## Build Setup
 
 ``` bash
@@ -24,7 +30,12 @@ For detailed explanation on how things work, consult the [docs for vue-loader](h
 - Rendite  
 - Steuern
 - Grafik?
-- Persistance -> https://alligator.io/vuejs/vuex-persist-state/ 
+- Persistance -> https://alligator.io/vuejs/vuex-persist-state/
+    -> mit Link zum speichern
+    -> mit "short" Namen 
+- Vergleich mit Aktien
+- Update auf neustes Sheet
+
 
 
 ## Dev Notes
@@ -52,6 +63,9 @@ https://github.com/parcel-bundler/parcel/issues/702
 
 https://stackoverflow.com/questions/18672452/left-align-and-right-align-within-div-in-bootstrap
 
+https://github.com/kevinongko/vue-numeric (alternative: https://github.com/vuejs-tips/v-money)
+https://stackoverflow.com/questions/46106037/vuex-computed-property-name-was-assigned-to-but-it-has-no-setter/46106438
+https://itnext.io/anyway-this-is-how-to-use-v-model-with-vuex-computed-setter-in-action-320eb682c976
 
 ### Important
 

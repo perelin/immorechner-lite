@@ -5,7 +5,7 @@
         <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
     
         <b-navbar-brand href="#">
-            ImmoRechner
+            Lohnt sich das?
             <font-awesome-icon icon="home" />
         </b-navbar-brand>
     

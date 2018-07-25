@@ -3,7 +3,7 @@
 
     <div class="card col-md-6 px-3 py-3" id="stage">
 
-        <h1 class="display-4">Immo&shy;Rechner
+        <h1 class="display-4">ImmoRechner 
             <font-awesome-icon icon="home" />
         </h1>
         <p class="lead">Die Einschätzung für Ihren Immo-Invest: Lohnt sich das? Wie hoch ist die Rendite? Was sind die Alternativen?</p>
@@ -36,6 +36,7 @@ export default {
     /*background-image: url('../assets/stage_01.jpg');*/
     background-image: url('../assets/grant-lemons-80424-unsplash_mirror.jpg');
     background-size: cover;
+    background-position: left;
 }
 
 #stage.card {
