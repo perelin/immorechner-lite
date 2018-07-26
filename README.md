@@ -68,6 +68,8 @@ https://github.com/kevinongko/vue-numeric (alternative: https://github.com/vuejs
 https://stackoverflow.com/questions/46106037/vuex-computed-property-name-was-assigned-to-but-it-has-no-setter/46106438
 https://itnext.io/anyway-this-is-how-to-use-v-model-with-vuex-computed-setter-in-action-320eb682c976
 
+https://stackoverflow.com/questions/19330611/fixed-footer-in-bootstrap
+
 ### Important
 
 https://github.com/parcel-bundler/parcel/issues/1363 

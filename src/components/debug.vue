@@ -1,5 +1,5 @@
 <template>
-    <button v-on:click="prefilSomeValuesLite()">Prefil some values</button>
+    <button type="button" v-on:click="prefilSomeValuesLite()" class="btn btn-sm btn-secondary">Prefil some values</button>
 </template>
 
 <script>
@@ -51,7 +51,5 @@
     div#debug {
         border: 1px solid blue;
     }
-    button {
-        font-size: 1rem;
-    }
+
 </style>

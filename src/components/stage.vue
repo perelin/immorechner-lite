@@ -12,7 +12,7 @@
                 <hr />
                 <p>Schnell und einfach zum Ergebnis. Einfach unten im Text die markierten Werte für deinen Immo-Invest anpassen und sofort die erste Einschätzung bekommen. Reicht nicht? Dann einfach alles bis ins kleinste Detail nachjustieren.</p>
                 <p class="lead">
-                    <a class="btn btn-primary btn-lg" href="#dialog" role="button">Jetzt starten</a>
+                    <a class="btn btn-primary btn-lg" href="#dialog" role="button" v-scroll-to="'#dialog-data'">Lohnt sich das?</a>
                     <debug-component />
                 </p>
 

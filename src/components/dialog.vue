@@ -4,7 +4,7 @@
     <div class="row justify-content-lg-center">
         <div class="col-lg-9 col-xl-8">
 
-            <div class="row">
+            <div class="row" id="dialog-data">
                 <div class="col mb-3">
                     <dialog-data-component />
                 </div>
