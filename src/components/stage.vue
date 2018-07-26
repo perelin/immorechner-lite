@@ -3,7 +3,7 @@
 
 
 
-            <div class="card col-md-9 px-3 py-3 mx-auto" id="stage">
+            <div class="card col-md-10 col-lg-8 col-xl-7 px-3 py-3 mx-auto" id="stage">
 
                 <h1 class="display-4">ImmoRechner
                     <font-awesome-icon icon="home" />

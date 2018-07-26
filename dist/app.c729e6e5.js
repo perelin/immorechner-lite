@@ -7511,7 +7511,7 @@ exports.default = {
     
         /* template */
         Object.assign($0acfa5, (function () {
-          var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"jumbotron text-dark"},[_c('div',{staticClass:"card col-md-9 px-3 py-3 mx-auto",attrs:{"id":"stage"}},[_c('h1',{staticClass:"display-4"},[_vm._v("ImmoRechner\n                    "),_c('font-awesome-icon',{attrs:{"icon":"home"}})],1),_vm._v(" "),_c('p',{staticClass:"lead"},[_vm._v("Die Einschätzung für Ihren Immo-Invest: Lohnt sich das? Wie hoch ist die Rendite? Was sind die Alternativen?")]),_vm._v(" "),_c('hr'),_vm._v(" "),_c('p',[_vm._v("Schnell und einfach zum Ergebnis. Einfach unten im Text die markierten Werte für deinen Immo-Invest anpassen und sofort die erste Einschätzung bekommen. Reicht nicht? Dann einfach alles bis ins kleinste Detail nachjustieren.")]),_vm._v(" "),_c('p',{staticClass:"lead"},[_c('a',{staticClass:"btn btn-primary btn-lg",attrs:{"href":"#dialog","role":"button"}},[_vm._v("Jetzt starten")]),_vm._v(" "),_c('debug-component')],1)])])}
+          var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"jumbotron text-dark"},[_c('div',{staticClass:"card col-md-10 col-lg-8 col-xl-7 px-3 py-3 mx-auto",attrs:{"id":"stage"}},[_c('h1',{staticClass:"display-4"},[_vm._v("ImmoRechner\n                    "),_c('font-awesome-icon',{attrs:{"icon":"home"}})],1),_vm._v(" "),_c('p',{staticClass:"lead"},[_vm._v("Die Einschätzung für Ihren Immo-Invest: Lohnt sich das? Wie hoch ist die Rendite? Was sind die Alternativen?")]),_vm._v(" "),_c('hr'),_vm._v(" "),_c('p',[_vm._v("Schnell und einfach zum Ergebnis. Einfach unten im Text die markierten Werte für deinen Immo-Invest anpassen und sofort die erste Einschätzung bekommen. Reicht nicht? Dann einfach alles bis ins kleinste Detail nachjustieren.")]),_vm._v(" "),_c('p',{staticClass:"lead"},[_c('a',{staticClass:"btn btn-primary btn-lg",attrs:{"href":"#dialog","role":"button"}},[_vm._v("Jetzt starten")]),_vm._v(" "),_c('debug-component')],1)])])}
 var staticRenderFns = []
 
           return {
@@ -9042,6 +9042,12 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 var _dialog_data_details = require('./dialog_data_details');
 
@@ -9117,7 +9123,7 @@ exports.default = {
     
         /* template */
         Object.assign($aa8f85, (function () {
-          var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('div',{staticClass:"card"},[_vm._m(0),_vm._v(" "),_c('div',{staticClass:"card-body"},[_c('form',[_c('div',{staticClass:"form-group"},[_c('label',{attrs:{"for":"purchasePrice"}},[_vm._v("Kaufpreis")]),_vm._v(" "),_c('div',{staticClass:"input-group"},[_c('vue-numeric',{staticClass:"form-control",attrs:{"currency":"","separator":".","pattern":"[0-9]*","id":"purchasePrice"},model:{value:(_vm.purchasePrice),callback:function ($$v) {_vm.purchasePrice=$$v},expression:"purchasePrice"}}),_vm._v(" "),_vm._m(1)],1),_vm._v(" "),_c('small',{staticClass:"form-text text-muted",attrs:{"id":"purchasePriceHelp"}},[_vm._v("Der Kaufpreis der Immobilie.")])]),_vm._v(" "),_c('div',{staticClass:"form-group"},[_c('label',{attrs:{"for":"selfCaptive"}},[_vm._v("Eigenkapital")]),_vm._v(" "),_c('div',{staticClass:"input-group"},[_c('vue-numeric',{staticClass:"form-control",attrs:{"currency":"","separator":".","pattern":"[0-9]*","id":"selfCaptive"},model:{value:(_vm.selfCaptive),callback:function ($$v) {_vm.selfCaptive=$$v},expression:"selfCaptive"}}),_vm._v(" "),_vm._m(2)],1),_vm._v(" "),_c('small',{staticClass:"form-text text-muted",attrs:{"id":"selfCaptiveHelp"}},[_vm._v("Die Startinvestition aus eigenem Kapital.")])]),_vm._v(" "),_c('div',{staticClass:"form-group"},[_c('label',{attrs:{"for":"runtime"}},[_vm._v("Laufzeit")]),_vm._v(" "),_c('div',{staticClass:"input-group"},[_c('input',{staticClass:"form-control",attrs:{"type":"number","pattern":"[0-9]*","id":"runtime"},domProps:{"value":_vm.runtime},on:{"input":_vm.inputRuntime}}),_vm._v(" "),_vm._m(3)]),_vm._v(" "),_c('small',{staticClass:"form-text text-muted",attrs:{"id":"runtimeHelp"}},[_vm._v("Die Laufzeit des Kredites.")])]),_vm._v(" "),_c('div',{staticClass:"form-group"},[_c('label',{attrs:{"for":"rentalIncome"}},[_vm._v("Kaltmiete")]),_vm._v(" "),_c('div',{staticClass:"input-group"},[_c('vue-numeric',{staticClass:"form-control",attrs:{"currency":"","separator":".","pattern":"[0-9]*","id":"rentalIncome"},model:{value:(_vm.rentalIncome),callback:function ($$v) {_vm.rentalIncome=$$v},expression:"rentalIncome"}}),_vm._v(" "),_vm._m(4)],1),_vm._v(" "),_c('small',{staticClass:"form-text text-muted",attrs:{"id":"rentalIncomeHelp"}},[_vm._v("Die erwartete Netto-Kaltmiete.")])])])]),_vm._v(" "),_c('div',{staticClass:"card-footer bg-transparent "},[_c('dialog-data-details-component')],1)])])}
+          var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('div',{staticClass:"card"},[_vm._m(0),_vm._v(" "),_c('div',{staticClass:"card-body"},[_c('form',[_c('div',{staticClass:"form-group"},[_c('label',{attrs:{"for":"purchasePrice"}},[_vm._v("Kaufpreis")]),_vm._v(" "),_c('div',{staticClass:"input-group"},[_c('vue-numeric',{staticClass:"form-control",attrs:{"currency":"","separator":".","pattern":"[0-9]*","id":"purchasePrice"},model:{value:(_vm.purchasePrice),callback:function ($$v) {_vm.purchasePrice=$$v},expression:"purchasePrice"}}),_vm._v(" "),_vm._m(1)],1),_vm._v(" "),_c('small',{staticClass:"form-text text-muted",attrs:{"id":"purchasePriceHelp"}},[_vm._v("Der Kaufpreis der Immobilie.")])]),_vm._v(" "),_c('div',{staticClass:"form-group"},[_c('label',{attrs:{"for":"selfCaptive"}},[_vm._v("Eigenkapital")]),_vm._v(" "),_c('div',{staticClass:"input-group"},[_c('vue-numeric',{staticClass:"form-control",attrs:{"currency":"","separator":".","pattern":"[0-9]*","id":"selfCaptive"},model:{value:(_vm.selfCaptive),callback:function ($$v) {_vm.selfCaptive=$$v},expression:"selfCaptive"}}),_vm._v(" "),_vm._m(2)],1),_vm._v(" "),_c('small',{staticClass:"form-text text-muted",attrs:{"id":"selfCaptiveHelp"}},[_vm._v("Die Startinvestition aus eigenem Kapital.")])]),_vm._v(" "),_c('div',{staticClass:"form-group"},[_c('label',{attrs:{"for":"runtime"}},[_vm._v("Laufzeit")]),_vm._v(" "),_c('div',{staticClass:"input-group"},[_c('input',{staticClass:"form-control",attrs:{"type":"number","pattern":"[0-9]*","id":"runtime"},domProps:{"value":_vm.runtime},on:{"input":_vm.inputRuntime}}),_vm._v(" "),_vm._m(3)]),_vm._v(" "),_c('small',{staticClass:"form-text text-muted",attrs:{"id":"runtimeHelp"}},[_vm._v("Die Laufzeit des Kredites.")])]),_vm._v(" "),_c('div',{staticClass:"form-group"},[_c('label',{attrs:{"for":"rentalIncome"}},[_vm._v("Kaltmiete")]),_vm._v(" "),_c('div',{staticClass:"input-group"},[_c('vue-numeric',{staticClass:"form-control",attrs:{"currency":"","separator":".","pattern":"[0-9]*","id":"rentalIncome"},model:{value:(_vm.rentalIncome),callback:function ($$v) {_vm.rentalIncome=$$v},expression:"rentalIncome"}}),_vm._v(" "),_vm._m(4)],1),_vm._v(" "),_c('small',{staticClass:"form-text text-muted",attrs:{"id":"rentalIncomeHelp"}},[_vm._v("Die erwartete Netto-Kaltmiete.")])])])]),_vm._v(" "),_c('div',{staticClass:"card-footer bg-transparent"},[_c('div',{staticClass:"text-center"},[_c('font-awesome-icon',{staticClass:"mr-3",attrs:{"icon":"arrow-down","size":"2x"}}),_vm._v(" "),_c('font-awesome-icon',{staticClass:"mr-3",attrs:{"icon":"arrow-down","size":"2x"}}),_vm._v(" "),_c('font-awesome-icon',{staticClass:"mr-3",attrs:{"icon":"arrow-down","size":"2x"}})],1)])])])}
 var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"card-header"},[_vm._v("\n            Daten "),_c('br'),_vm._v(" "),_c('small',{staticClass:"text-muted mb-3"},[_vm._v("Alle Daten zu Ihrem Investment. Kosten, Kredit, etc.")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"input-group-append"},[_c('span',{staticClass:"input-group-text"},[_vm._v("€")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"input-group-append"},[_c('span',{staticClass:"input-group-text"},[_vm._v("€")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"input-group-append"},[_c('span',{staticClass:"input-group-text"},[_vm._v("Jahre")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"input-group-append"},[_c('span',{staticClass:"input-group-text"},[_vm._v("€ / Monat")])])}]
 
           return {
@@ -11037,7 +11043,7 @@ exports.default = {
     
         /* template */
         Object.assign($b8d1e8, (function () {
-          var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('footer',{staticClass:"footer bg-primary"},[_c('div',{staticClass:"container d-flex"},[_c('div',{staticClass:"text-light"},[_vm._v("© 2018 ImmoRechner")]),_vm._v(" "),_c('small',{staticClass:"ml-auto"},[_vm._v(_vm._s(_vm.versionFromEnv))])])])}
+          var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('footer',{staticClass:"footer bg-primary fixed-bottom"},[_c('div',{staticClass:"container d-flex"},[_c('div',{staticClass:"text-light"},[_vm._v("© 2018 ImmoRechner")]),_vm._v(" "),_c('small',{staticClass:"ml-auto"},[_vm._v(_vm._s(_vm.versionFromEnv))])])])}
 var staticRenderFns = []
 
           return {
@@ -35990,12 +35996,14 @@ var _immorechner_util2 = _interopRequireDefault(_immorechner_util);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_fontawesomeSvgCore.library.add(_freeSolidSvgIcons.faHome);
+_vue2.default.use(_bootstrapVue2.default);
+
+_fontawesomeSvgCore.library.add(_freeSolidSvgIcons.faHome, _freeSolidSvgIcons.faArrowDown);
 
 _vue2.default.component('font-awesome-icon', _vueFontawesome.FontAwesomeIcon);
+
 _vue2.default.mixin(_immorechner_util2.default.formatPercentMixin);
 _vue2.default.mixin(_immorechner_util2.default.formatEuroMixin);
-_vue2.default.use(_bootstrapVue2.default);
 
 new _vue2.default({
     el: '#app',
@@ -36005,4 +36013,4 @@ new _vue2.default({
     }
 });
 },{"vue":"4673","./app.vue":"wlok","./store":"47HK","bootstrap/dist/css/bootstrap.css":"1gsg","bootstrap-vue/dist/bootstrap-vue.css":"1gsg","bootstrap-vue":"h7pH","@fortawesome/fontawesome-svg-core":"FlFf","@fortawesome/free-solid-svg-icons":"yAA2","@fortawesome/vue-fontawesome":"m8Qn","./utils/immorechner_util":"9jkT"}]},{},["vZyd"], null)
-//# sourceMappingURL=/app.c6939fc6.map
+//# sourceMappingURL=/app.9ffe821a.map

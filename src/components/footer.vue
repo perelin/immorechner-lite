@@ -1,5 +1,5 @@
 <template>
-<footer class="footer bg-primary">
+<footer class="footer bg-primary fixed-bottom">
     <div class="container d-flex">
         <div class="text-light">&copy; 2018 ImmoRechner</div> <small class="ml-auto">{{ versionFromEnv }}</small>
     </div>
@@ -49,7 +49,7 @@ body#immorechner {
 }
 
 .footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     height: 60px;
