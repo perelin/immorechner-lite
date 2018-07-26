@@ -35,6 +35,7 @@ For detailed explanation on how things work, consult the [docs for vue-loader](h
     -> mit "short" Namen 
 - Vergleich mit Aktien
 - Update auf neustes Sheet
+- Cookies, Eingaben speichern, Cookie consent?
 
 
 

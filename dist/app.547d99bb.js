@@ -7499,6 +7499,10 @@ exports.default = {
 //
 //
 //
+//
+//
+//
+//
         var $0acfa5 = exports.default || module.exports;
       
       if (typeof $0acfa5 === 'function') {
@@ -7507,7 +7511,7 @@ exports.default = {
     
         /* template */
         Object.assign($0acfa5, (function () {
-          var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"jumbotron text-dark"},[_c('div',{staticClass:"card col-md-6 px-3 py-3",attrs:{"id":"stage"}},[_c('h1',{staticClass:"display-4"},[_vm._v("ImmoRechner \n            "),_c('font-awesome-icon',{attrs:{"icon":"home"}})],1),_vm._v(" "),_c('p',{staticClass:"lead"},[_vm._v("Die Einschätzung für Ihren Immo-Invest: Lohnt sich das? Wie hoch ist die Rendite? Was sind die Alternativen?")]),_vm._v(" "),_c('hr'),_vm._v(" "),_c('p',[_vm._v("Schnell und einfach zum Ergebnis. Einfach unten im Text die markierten Werte für deinen Immo-Invest anpassen und sofort die erste Einschätzung bekommen. Reicht nicht? Dann einfach alles bis ins kleinste Detail nachjustieren.")]),_vm._v(" "),_c('p',{staticClass:"lead"},[_c('a',{staticClass:"btn btn-primary btn-lg",attrs:{"href":"#dialog","role":"button"}},[_vm._v("Jetzt starten")]),_vm._v(" "),_c('debug-component')],1)])])}
+          var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"jumbotron text-dark"},[_c('div',{staticClass:"card col-md-9 px-3 py-3 mx-auto",attrs:{"id":"stage"}},[_c('h1',{staticClass:"display-4"},[_vm._v("ImmoRechner\n                    "),_c('font-awesome-icon',{attrs:{"icon":"home"}})],1),_vm._v(" "),_c('p',{staticClass:"lead"},[_vm._v("Die Einschätzung für Ihren Immo-Invest: Lohnt sich das? Wie hoch ist die Rendite? Was sind die Alternativen?")]),_vm._v(" "),_c('hr'),_vm._v(" "),_c('p',[_vm._v("Schnell und einfach zum Ergebnis. Einfach unten im Text die markierten Werte für deinen Immo-Invest anpassen und sofort die erste Einschätzung bekommen. Reicht nicht? Dann einfach alles bis ins kleinste Detail nachjustieren.")]),_vm._v(" "),_c('p',{staticClass:"lead"},[_c('a',{staticClass:"btn btn-primary btn-lg",attrs:{"href":"#dialog","role":"button"}},[_vm._v("Jetzt starten")]),_vm._v(" "),_c('debug-component')],1)])])}
 var staticRenderFns = []
 
           return {
@@ -9279,6 +9283,33 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 exports.default = {
     components: {
@@ -9296,7 +9327,7 @@ exports.default = {
     
         /* template */
         Object.assign($f7dd6c, (function () {
-          var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('div',{staticClass:"row"},[_c('div',{staticClass:"col-lg-3 mb-3"},[_c('dialog-data-component')],1),_vm._v(" "),_c('div',{staticClass:"col-lg-3 mb-3"},[_c('dialog-payback-component')],1),_vm._v(" "),_c('div',{staticClass:"col-lg-3 mb-3"},[_c('dialog-return-component')],1),_vm._v(" "),_c('div',{staticClass:"col-lg-3 mb-3"},[_c('dialog-ownership-component')],1)])])}
+          var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('div',{staticClass:"row justify-content-lg-center"},[_c('div',{staticClass:"col-lg-9 col-xl-8"},[_c('div',{staticClass:"row"},[_c('div',{staticClass:"col mb-3"},[_c('dialog-data-component')],1)]),_vm._v(" "),_c('div',{staticClass:"row"},[_c('div',{staticClass:"col mb-3"},[_c('dialog-payback-component')],1)]),_vm._v(" "),_c('div',{staticClass:"row"},[_c('div',{staticClass:"col mb-3"},[_c('dialog-return-component')],1)]),_vm._v(" "),_c('div',{staticClass:"row"},[_c('div',{staticClass:"col mb-3"},[_c('dialog-ownership-component')],1)])])])])}
 var staticRenderFns = []
 
           return {
@@ -9318,7 +9349,7 @@ var staticRenderFns = []
     
         /* template */
         Object.assign($b66ff2, (function () {
-          var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('b-navbar',{attrs:{"toggleable":"md","type":"dark","variant":"primary"}},[_c('b-navbar-toggle',{attrs:{"target":"nav_collapse"}}),_vm._v(" "),_c('b-navbar-brand',{attrs:{"href":"#"}},[_vm._v("\n        Lohnt sich das?\n        "),_c('font-awesome-icon',{attrs:{"icon":"home"}})],1),_vm._v(" "),_c('b-collapse',{attrs:{"is-nav":"","id":"nav_collapse"}},[_c('b-navbar-nav',[_c('b-nav-item',{attrs:{"href":"#"}},[_vm._v("Rechner")])],1),_vm._v(" "),_c('b-navbar-nav',{staticClass:"ml-auto"},[_c('b-nav-item',{attrs:{"href":"#"}},[_vm._v("AGBs")]),_vm._v(" "),_c('b-nav-item',{attrs:{"href":"#"}},[_vm._v("Impressum")]),_vm._v(" "),_c('b-nav-item',{attrs:{"href":"#"}},[_vm._v("Datenschutz")])],1)],1)],1)}
+          var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('b-navbar',{attrs:{"toggleable":"md","type":"dark","variant":"primary"}},[_c('b-navbar-toggle',{attrs:{"target":"nav_collapse"}}),_vm._v(" "),_c('b-navbar-brand',{attrs:{"href":"#"}},[_vm._v("\n        Lohnt sich das?\n        "),_c('font-awesome-icon',{attrs:{"icon":"home"}})],1),_vm._v(" "),_c('b-collapse',{attrs:{"is-nav":"","id":"nav_collapse"}},[_c('b-navbar-nav',[_c('b-nav-item',{attrs:{"href":"#"}},[_vm._v("ImmoRechner")]),_vm._v(" "),_c('b-nav-item',{attrs:{"href":"#"}},[_vm._v("FAQ")])],1),_vm._v(" "),_c('b-navbar-nav',{staticClass:"ml-auto"},[_c('b-nav-item',{staticClass:"small",attrs:{"href":"#"}},[_vm._v("AGBs")]),_vm._v(" "),_c('b-nav-item',{staticClass:"small",attrs:{"href":"#"}},[_vm._v("Impressum")]),_vm._v(" "),_c('b-nav-item',{staticClass:"small",attrs:{"href":"#"}},[_vm._v("Datenschutz")])],1)],1)],1)}
 var staticRenderFns = []
 
           return {
@@ -11106,7 +11137,7 @@ exports.default = {
     
         /* template */
         Object.assign($c5248a, (function () {
-          var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"app"}},[_c('header',[_c('header-component')],1),_vm._v(" "),_c('stage-component'),_vm._v(" "),_c('div',{staticClass:"container-fluid"},[_c('dialog-component')],1),_vm._v(" "),_c('footer-component')],1)}
+          var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"app"}},[_c('header',[_c('header-component')],1),_vm._v(" "),_c('stage-component'),_vm._v(" "),_c('div',{staticClass:"container"},[_c('dialog-component')],1),_vm._v(" "),_c('footer-component')],1)}
 var staticRenderFns = []
 
           return {
@@ -35974,4 +36005,4 @@ new _vue2.default({
     }
 });
 },{"vue":"4673","./app.vue":"wlok","./store":"47HK","bootstrap/dist/css/bootstrap.css":"1gsg","bootstrap-vue/dist/bootstrap-vue.css":"1gsg","bootstrap-vue":"h7pH","@fortawesome/fontawesome-svg-core":"FlFf","@fortawesome/free-solid-svg-icons":"yAA2","@fortawesome/vue-fontawesome":"m8Qn","./utils/immorechner_util":"9jkT"}]},{},["vZyd"], null)
-//# sourceMappingURL=/app.5a786433.map
+//# sourceMappingURL=/app.c6939fc6.map

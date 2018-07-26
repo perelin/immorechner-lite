@@ -4,7 +4,7 @@
         <header-component />
     </header>
     <stage-component />
-    <div class="container-fluid">
+    <div class="container">
         <dialog-component />
     </div>
     <footer-component />

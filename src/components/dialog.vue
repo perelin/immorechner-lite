@@ -1,6 +1,33 @@
 <template>
 <div>
-    <div class="row">
+
+    <div class="row justify-content-lg-center">
+        <div class="col-lg-9 col-xl-8">
+
+            <div class="row">
+                <div class="col mb-3">
+                    <dialog-data-component />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col mb-3">
+                    <dialog-payback-component />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col mb-3">
+                    <dialog-return-component />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col mb-3">
+                    <dialog-ownership-component />
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- <div class="row">
         <div class="col-lg-3 mb-3">
             <dialog-data-component />
         </div>
@@ -16,7 +43,7 @@
         <div class="col-lg-3 mb-3">
             <dialog-ownership-component />
         </div>
-    </div>
+    </div> -->
 </div>
 </template>
 

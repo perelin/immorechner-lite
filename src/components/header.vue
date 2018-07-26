@@ -12,16 +12,17 @@
         <b-collapse is-nav id="nav_collapse">
     
             <b-navbar-nav>
-                <b-nav-item href="#">Rechner</b-nav-item>
+                <b-nav-item href="#">ImmoRechner</b-nav-item>
+                <b-nav-item href="#">FAQ</b-nav-item>
     
             </b-navbar-nav>
     
             <!-- Right aligned nav items -->
             <b-navbar-nav class="ml-auto">
     
-                <b-nav-item href="#">AGBs</b-nav-item>
-                <b-nav-item href="#">Impressum</b-nav-item>
-                <b-nav-item href="#">Datenschutz</b-nav-item>
+                <b-nav-item href="#" class="small">AGBs</b-nav-item>
+                <b-nav-item href="#" class="small">Impressum</b-nav-item>
+                <b-nav-item href="#" class="small">Datenschutz</b-nav-item>
     
             </b-navbar-nav>
     
