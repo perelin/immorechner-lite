@@ -40,11 +40,11 @@ export default {
     /*background-image: url('../assets/stage_01.jpg');*/
     background-image: url('../assets/grant-lemons-80424-unsplash_mirror.jpg');
     background-size: cover;
-    background-position: left;
+    background-position: center;
 }
 
 #stage.card {
-    background: rgba(228, 232, 235, 0.8) !important;
+    background: rgba(228, 232, 235, 0.85) !important;
 }
 
 #stage hr {

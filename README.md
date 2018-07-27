@@ -36,8 +36,8 @@ For detailed explanation on how things work, consult the [docs for vue-loader](h
 - Vergleich mit Aktien
 - Update auf neustes Sheet
 - Cookies, Eingaben speichern, Cookie consent?
-
-
+- base some value defaults on best gueses percent (nicht umlegbares Hausgeld 60%, etc)
+- make KPIs background color value sensitive (red = bad, orange = might be ok, green= very good)
 
 ## Dev Notes
 
@@ -69,6 +69,8 @@ https://stackoverflow.com/questions/46106037/vuex-computed-property-name-was-ass
 https://itnext.io/anyway-this-is-how-to-use-v-model-with-vuex-computed-setter-in-action-320eb682c976
 
 https://stackoverflow.com/questions/19330611/fixed-footer-in-bootstrap
+
+https://www.npmjs.com/package/vue-scrollto
 
 ### Important
 

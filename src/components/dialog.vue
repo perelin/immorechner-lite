@@ -9,22 +9,25 @@
                     <dialog-data-component />
                 </div>
             </div>
+
             <div class="row">
                 <div class="col mb-3">
                     <dialog-payback-component />
                 </div>
             </div>
-            <div class="row">
-                <div class="col mb-3">
-                    <dialog-return-component />
-                </div>
-            </div>
+
             <div class="row">
                 <div class="col mb-3">
                     <dialog-ownership-component />
                 </div>
             </div>
-            
+
+            <div class="row">
+                <div class="col mb-3">
+                    <dialog-alternatives-component />
+                </div>
+            </div>
+
         </div>
     </div>
     <!-- <div class="row">
@@ -50,14 +53,14 @@
 <script>
 import DialogDataComponent from './dialog_data.vue'
 import DialogPaybackComponent from './dialog_payback.vue'
-import DialogReturnComponent from './dialog_return.vue'
+import DialogAlternativesComponent from './dialog_alternatives.vue'
 import DialogOwnershipComponent from './dialog_ownership.vue'
 
 export default {
     components: {
         DialogDataComponent,
         DialogPaybackComponent,
-        DialogReturnComponent,
+        DialogAlternativesComponent,
         DialogOwnershipComponent,
     }
 }

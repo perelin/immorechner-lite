@@ -12,7 +12,7 @@
         <b-collapse is-nav id="nav_collapse">
     
             <b-navbar-nav>
-                <b-nav-item href="#">ImmoRechner</b-nav-item>
+                <b-nav-item href="#" v-scroll-to="'#dialog-data'">ImmoRechner</b-nav-item>
                 <b-nav-item href="#">FAQ</b-nav-item>
     
             </b-navbar-nav>

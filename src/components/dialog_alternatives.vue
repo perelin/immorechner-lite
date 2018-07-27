@@ -2,8 +2,8 @@
 <div>
     <div class="card">
         <div class="card-header">
-            Abbezahlt <br />
-            <small class="text-muted mb-3">Wie hoch ist die Rendite auf den anfänglichen Invest nach dem die Wohnung vollständig abbezahlt ist?</small>
+            Alternativen<br />
+            <small class="text-muted mb-3">Was wäre mit anderen Investmentarten zu erreichen?</small>
         </div>
 
         <div class="card-body">

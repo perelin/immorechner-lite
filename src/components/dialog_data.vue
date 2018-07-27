@@ -54,7 +54,6 @@
         <div class="card-footer bg-transparent">
             <!-- <dialog-data-details-component /> -->
             <div class="text-center text-muted">
-
                 <font-awesome-icon icon="arrow-down" size="2x" class="mr-3" />
                 <font-awesome-icon icon="arrow-down" size="2x" class="mr-3" />
                 <font-awesome-icon icon="arrow-down" size="2x" class="mr-3" />

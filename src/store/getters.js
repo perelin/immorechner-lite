@@ -57,6 +57,9 @@ export default {
     burdenPerMonthLetting(state, getters) {
         return state.rentalIncome - getters.monthlyLoanRate - getters.totalRenovationCostPerMonth - state.houseMoney + state.houseMoneyFoldable
     },
+    burdenPerYearInclTaxLetting(state, getters) {
+        return getters.totalAdditionalPaymentLetting * 12
+    },
     taxSavingsAmortizationLetting(state, getters) {
         let totalAmortizablePurchaseCosts = state.purchasePrice + getters.totalClosingCosts
 
@@ -99,6 +102,13 @@ export default {
     resumeLettingAfterRuntime(state, getters) {
         return getters.resumeLetting * 12 * state.runtime
     },
+    returnLettingAfterRuntime(state, getters) {
+        return getters.resumeLetting / getters.burdenPerMonthLetting
+    },
+    burdenPerMonthLettingOwnership(state, getters) {
+        return state.rentalIncome - getters.totalRenovationCostPerMonth - state.houseMoney + state.houseMoneyFoldable
+    },
+
     // Buy Owner-Occupation (OO)
     overallBurden(state, getters) {
         return state.rentalSavings - getters.monthlyLoanRate - state.houseMoney

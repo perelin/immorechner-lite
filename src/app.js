@@ -25,6 +25,8 @@ Vue.mixin(ImmorechnerUtils.formatEuroMixin);
 // Other
 import VueScrollTo from 'vue-scrollto'
 Vue.use(VueScrollTo)
+import VueCharts from 'vue-chartjs'
+import { Bar, Line, Pie, Doughnut } from 'vue-chartjs'
 
 // Init
 new Vue({
