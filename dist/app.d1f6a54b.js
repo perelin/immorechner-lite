@@ -7398,6 +7398,11 @@ var _vue2 = _interopRequireDefault(_vue);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = {
+    data: function data() {
+        return {
+            dump: ''
+        };
+    },
     methods: {
         prefilSomeValuesFull: function prefilSomeValuesFull() {
             // Person
@@ -7432,9 +7437,26 @@ exports.default = {
             // Loan
             this.$store.commit('inputSelfCaptive', 30000);
             this.$store.commit('inputRuntime', 25);
+        },
+        dumpState: function dumpState() {
+            var state = this.$store.state;
+            var stateBlob = JSON.stringify(state);
+            this.dump = stateBlob;
+            console.log(stateBlob);
+        },
+        importState: function importState() {
+            //console.log(this.dump)
+            this.$store.replaceState(JSON.parse(this.dump));
         }
     }
 }; //
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -7446,7 +7468,7 @@ exports.default = {
     
         /* template */
         Object.assign($8c51c4, (function () {
-          var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('button',{staticClass:"btn btn-sm btn-secondary",attrs:{"type":"button"},on:{"click":function($event){_vm.prefilSomeValuesLite()}}},[_vm._v("Prefil some values")])}
+          var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('span',[_c('form',[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.dump),expression:"dump"}],staticClass:"form-control small",attrs:{"type":"text"},domProps:{"value":(_vm.dump)},on:{"input":function($event){if($event.target.composing){ return; }_vm.dump=$event.target.value}}}),_vm._v(" "),_c('button',{staticClass:"btn btn-sm btn-secondary",attrs:{"type":"button"},on:{"click":function($event){_vm.dumpState()}}},[_vm._v("Dump State")]),_vm._v(" "),_c('button',{staticClass:"btn btn-sm btn-secondary",attrs:{"type":"button"},on:{"click":function($event){_vm.importState()}}},[_vm._v("Import State")]),_vm._v(" "),_c('button',{staticClass:"btn btn-sm btn-secondary",attrs:{"type":"button"},on:{"click":function($event){_vm.prefilSomeValuesLite()}}},[_vm._v("Prefil some values")])])])}
 var staticRenderFns = []
 
           return {
@@ -55766,4 +55788,4 @@ new _vue2.default({
     }
 });
 },{"vue":"4673","./app.vue":"wlok","./store":"47HK","bootstrap/dist/css/bootstrap.css":"1gsg","bootstrap-vue/dist/bootstrap-vue.css":"1gsg","bootstrap-vue":"h7pH","@fortawesome/fontawesome-svg-core":"FlFf","@fortawesome/free-solid-svg-icons":"yAA2","@fortawesome/vue-fontawesome":"m8Qn","./utils/immorechner_util":"9jkT","vue-scrollto":"9PPm","vue-chartjs":"SFE4"}]},{},["vZyd"], null)
-//# sourceMappingURL=/app.88bc3f94.map
+//# sourceMappingURL=/app.fe2a6e41.map

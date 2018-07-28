@@ -38,9 +38,11 @@ For detailed explanation on how things work, consult the [docs for vue-loader](h
 - Cookies, Eingaben speichern, Cookie consent?
 - base some value defaults on best gueses percent (nicht umlegbares Hausgeld 60%, etc)
 - make KPIs background color value sensitive (red = bad, orange = might be ok, green= very good)
+- provide as app
 
 ## Dev Notes
 
+https://www.whatismydayrate.com/
 
 https://github.com/vuejs-templates/webpack-simple 
 
@@ -71,6 +73,11 @@ https://itnext.io/anyway-this-is-how-to-use-v-model-with-vuex-computed-setter-in
 https://stackoverflow.com/questions/19330611/fixed-footer-in-bootstrap
 
 https://www.npmjs.com/package/vue-scrollto
+
+persitance
+devCrossNet
+just JSON.stringify it
+https://github.com/devCrossNet/chaptr/blob/master/src/app/home/Home/Home.vue#L118
 
 ### Important
 
