@@ -1,3 +1,5 @@
+import immoUtils from './../utils/immorechner_util'
+
 export default {
     calculation01(state) {
         return state.purchasePrice * state.courtage
@@ -55,10 +57,12 @@ export default {
         return state.renovationCostPerMonth * state.squareMeters / 12
     },
     burdenPerMonthLetting(state, getters) {
-        return state.rentalIncome - getters.monthlyLoanRate - getters.totalRenovationCostPerMonth - state.houseMoney + state.houseMoneyFoldable
+        let burden = state.rentalIncome - getters.monthlyLoanRate - getters.totalRenovationCostPerMonth - state.houseMoney + state.houseMoneyFoldable
+        return immoUtils.checkIfValidNumber(burden)
     },
     burdenPerYearInclTaxLetting(state, getters) {
-        return getters.totalAdditionalPaymentLetting * 12
+        let burden = getters.totalAdditionalPaymentLetting * 12
+        return immoUtils.checkIfValidNumber(burden)
     },
     taxSavingsAmortizationLetting(state, getters) {
         let totalAmortizablePurchaseCosts = state.purchasePrice + getters.totalClosingCosts
@@ -103,7 +107,8 @@ export default {
         return getters.resumeLetting * 12 * state.runtime
     },
     returnLettingAfterRuntime(state, getters) {
-        return getters.resumeLetting / getters.burdenPerMonthLetting
+        let burden = getters.resumeLetting / getters.burdenPerMonthLetting
+        return immoUtils.checkIfValidNumber(burden)
     },
     burdenPerMonthLettingOwnership(state, getters) {
         return state.rentalIncome - getters.totalRenovationCostPerMonth - state.houseMoney + state.houseMoneyFoldable

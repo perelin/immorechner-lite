@@ -25,20 +25,6 @@ For detailed explanation on how things work, consult the [docs for vue-loader](h
 
 ## Todos
 
-- Default Einstellungen anzeigen
-- Default ändern lassen
-- Rendite  
-- Steuern
-- Grafik?
-- Persistance -> https://alligator.io/vuejs/vuex-persist-state/
-    -> mit Link zum speichern
-    -> mit "short" Namen 
-- Vergleich mit Aktien
-- Update auf neustes Sheet
-- Cookies, Eingaben speichern, Cookie consent?
-- base some value defaults on best gueses percent (nicht umlegbares Hausgeld 60%, etc)
-- make KPIs background color value sensitive (red = bad, orange = might be ok, green= very good)
-- provide as app
 
 ## Dev Notes
 

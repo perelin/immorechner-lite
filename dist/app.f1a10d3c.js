@@ -7555,10 +7555,16 @@ exports.default = {
     format2Eur: function format2Eur(number) {
         return number.toLocaleString("de-DE", { style: "currency", currency: "EUR", minimumFractionDigits: 2 });
     },
+    checkIfValidNumber: function checkIfValidNumber(number) {
+        if (isNaN(number) || !isFinite(number)) {
+            number = 0;
+        }
+        return number;
+    },
     formatEuroMixin: {
         methods: {
             formatEuro: function formatEuro(number) {
-                return number.toLocaleString("de-DE", { style: "currency", currency: "EUR", minimumFractionDigits: 2 });
+                return number.toLocaleString("de-DE", { style: "currency", currency: "EUR", maximumFractionDigits: 0, minimumFractionDigits: 0 });
             }
         }
     },
@@ -28383,6 +28389,21 @@ exports.default = {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
         var $ac36fa = exports.default || module.exports;
       
       if (typeof $ac36fa === 'function') {
@@ -28391,7 +28412,7 @@ exports.default = {
     
         /* template */
         Object.assign($ac36fa, (function () {
-          var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('div',{staticClass:"card"},[_vm._m(0),_vm._v(" "),_c('div',{staticClass:"card-body"},[_c('div',{staticClass:"row"},[_c('div',{staticClass:"col"},[_c('div',{staticClass:"card-group"},[_c('div',{staticClass:"card text-white bg-info  mb-3"},[_c('div',{staticClass:"card-header"},[_vm._v("Cashflow monatlich")]),_vm._v(" "),_c('div',{staticClass:"card-body"},[_c('h5',{staticClass:"card-title"},[_vm._v(_vm._s(_vm.formatEuro(_vm.burdenPerMonthLetting)))]),_vm._v(" ohne Steuern\n                            ")])]),_vm._v(" "),_c('div',{staticClass:"card text-white bg-info  mb-3"},[_c('div',{staticClass:"card-header"},[_vm._v("Cashflow jährlich")]),_vm._v(" "),_c('div',{staticClass:"card-body"},[_c('h5',{staticClass:"card-title"},[_vm._v(_vm._s(_vm.formatEuro(_vm.burdenPerYearInclTaxLetting)))]),_vm._v(" inklusive Steuern\n                            ")])]),_vm._v(" "),_c('div',{staticClass:"card text-white bg-info mb-3"},[_c('div',{staticClass:"card-header"},[_vm._v("Rendite p.a.")]),_vm._v(" "),_c('div',{staticClass:"card-body"},[_c('h5',{staticClass:"card-title"},[_vm._v(_vm._s(_vm.formatPercent(_vm.returnLettingAfterRuntime)))]),_vm._v(" inklusive Steuern\n                            ")])])])])]),_vm._v(" "),_c('div',{staticClass:"row"},[_c('div',{staticClass:"col"},[_c('div',{staticClass:"card mb-3"},[_c('div',{staticClass:"card-header"},[_vm._v("Zinsanteil")]),_vm._v(" "),_c('div',{staticClass:"card-body"},[_c('chart-test-component')],1)])])])]),_vm._v(" "),_vm._m(1)])])}
+          var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('div',{staticClass:"card"},[_vm._m(0),_vm._v(" "),_c('div',{staticClass:"card-body"},[_c('div',{staticClass:"row"},[_c('div',{staticClass:"col"},[_c('div',{staticClass:"card-group"},[_c('div',{staticClass:"card text-white bg-info  mb-3"},[_c('div',{staticClass:"card-header"},[_vm._v("Cashflow monatlich")]),_vm._v(" "),_c('div',{staticClass:"card-body"},[_c('h5',{staticClass:"card-title"},[_vm._v(_vm._s(_vm.formatEuro(_vm.burdenPerMonthLetting)))]),_vm._v(" ohne Steuern\n                            ")])]),_vm._v(" "),_c('div',{staticClass:"card text-white bg-info  mb-3"},[_c('div',{staticClass:"card-header"},[_vm._v("Cashflow jährlich")]),_vm._v(" "),_c('div',{staticClass:"card-body"},[_c('h5',{staticClass:"card-title"},[_vm._v(_vm._s(_vm.formatEuro(_vm.burdenPerYearInclTaxLetting)))]),_vm._v(" inklusive Steuern\n                            ")])]),_vm._v(" "),_c('div',{staticClass:"card text-white bg-info mb-3"},[_c('div',{staticClass:"card-header"},[_vm._v("Rendite p.a.")]),_vm._v(" "),_c('div',{staticClass:"card-body"},[_c('h5',{staticClass:"card-title"},[_vm._v(_vm._s(_vm.formatPercent(_vm.returnLettingAfterRuntime)))]),_vm._v(" inklusive Steuern\n                            ")])])])])]),_vm._v(" "),_c('div',{staticClass:"row"},[_c('div',{staticClass:"col"},[_c('div',{staticClass:"card-group"},[_c('div',{staticClass:"card mb-3"},[_c('div',{staticClass:"card-header"},[_vm._v("Zinsanteil")]),_vm._v(" "),_c('div',{staticClass:"card-body"},[_c('chart-test-component')],1)]),_vm._v(" "),_c('div',{staticClass:"card mb-3"},[_c('div',{staticClass:"card-header"},[_vm._v("???")]),_vm._v(" "),_c('div',{staticClass:"card-body"},[_c('chart-test-component')],1)]),_vm._v(" "),_c('div',{staticClass:"card mb-3"},[_c('div',{staticClass:"card-header"},[_vm._v("???")]),_vm._v(" "),_c('div',{staticClass:"card-body"},[_c('chart-test-component')],1)])])])])]),_vm._v(" "),_vm._m(1)])])}
 var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"card-header"},[_vm._v("\n            Tilgungsphase "),_c('br'),_vm._v(" "),_c('small',{staticClass:"text-muted mb-3"},[_vm._v("Wie sehen Ihre Finanzen während der Tilgungsphase aus? Ist der Cashflow positiv oder negative?")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"card-footer text-center"},[_c('small',[_c('a',{attrs:{"href":"javascript:(void)"}},[_vm._v("Wie haben wir das berechnet?")])])])}]
 
           return {
@@ -30530,11 +30551,18 @@ exports.default = {
     }
 };
 },{}],"xykp":[function(require,module,exports) {
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+
+var _immorechner_util = require('./../utils/immorechner_util');
+
+var _immorechner_util2 = _interopRequireDefault(_immorechner_util);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 exports.default = {
     calculation01: function calculation01(state) {
         return state.purchasePrice * state.courtage;
@@ -30594,10 +30622,12 @@ exports.default = {
         return state.renovationCostPerMonth * state.squareMeters / 12;
     },
     burdenPerMonthLetting: function burdenPerMonthLetting(state, getters) {
-        return state.rentalIncome - getters.monthlyLoanRate - getters.totalRenovationCostPerMonth - state.houseMoney + state.houseMoneyFoldable;
+        var burden = state.rentalIncome - getters.monthlyLoanRate - getters.totalRenovationCostPerMonth - state.houseMoney + state.houseMoneyFoldable;
+        return _immorechner_util2.default.checkIfValidNumber(burden);
     },
     burdenPerYearInclTaxLetting: function burdenPerYearInclTaxLetting(state, getters) {
-        return getters.totalAdditionalPaymentLetting * 12;
+        var burden = getters.totalAdditionalPaymentLetting * 12;
+        return _immorechner_util2.default.checkIfValidNumber(burden);
     },
     taxSavingsAmortizationLetting: function taxSavingsAmortizationLetting(state, getters) {
         var totalAmortizablePurchaseCosts = state.purchasePrice + getters.totalClosingCosts;
@@ -30636,7 +30666,8 @@ exports.default = {
         return getters.resumeLetting * 12 * state.runtime;
     },
     returnLettingAfterRuntime: function returnLettingAfterRuntime(state, getters) {
-        return getters.resumeLetting / getters.burdenPerMonthLetting;
+        var burden = getters.resumeLetting / getters.burdenPerMonthLetting;
+        return _immorechner_util2.default.checkIfValidNumber(burden);
     },
     burdenPerMonthLettingOwnership: function burdenPerMonthLettingOwnership(state, getters) {
         return state.rentalIncome - getters.totalRenovationCostPerMonth - state.houseMoney + state.houseMoneyFoldable;
@@ -30677,7 +30708,7 @@ exports.default = {
         return getters.resumeInvest * 12 * state.runtime;
     }
 };
-},{}],"47HK":[function(require,module,exports) {
+},{"./../utils/immorechner_util":"9jkT"}],"47HK":[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -55788,4 +55819,4 @@ new _vue2.default({
     }
 });
 },{"vue":"4673","./app.vue":"wlok","./store":"47HK","bootstrap/dist/css/bootstrap.css":"1gsg","bootstrap-vue/dist/bootstrap-vue.css":"1gsg","bootstrap-vue":"h7pH","@fortawesome/fontawesome-svg-core":"FlFf","@fortawesome/free-solid-svg-icons":"yAA2","@fortawesome/vue-fontawesome":"m8Qn","./utils/immorechner_util":"9jkT","vue-scrollto":"9PPm","vue-chartjs":"SFE4"}]},{},["vZyd"], null)
-//# sourceMappingURL=/app.fe2a6e41.map
+//# sourceMappingURL=/app.f9aaab70.map
