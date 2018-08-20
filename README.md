@@ -92,3 +92,12 @@ https://github.com/angular/angular-cli/issues/9020 => fix: "bootstrap": "4.0.0-b
 https://github.com/parcel-bundler/parcel/issues/645
 
 https://stackoverflow.com/questions/48016668/browserslisterror-unknown-browser-major
+
+## Testing with jest and vuex
+
+https://markus.oberlehner.net/blog/testing-vuex-powered-vue-components-with-jest/
+
+https://vuex.vuejs.org/guide/testing.html
+
+https://vue-test-utils.vuejs.org/guides/testing-single-file-components-with-jest.html
+

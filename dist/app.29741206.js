@@ -7409,7 +7409,7 @@ exports.default = {
             this.$store.commit('inputCurrentRent', 400);
             // Apartment
             this.$store.commit('inputPurchasePrice', 100000);
-            this.$store.commit('inputCourtage', 2);
+            this.$store.commit('inputCourtage', 3);
             this.$store.commit('inputSquareMeters', 60);
             this.$store.commit('inputRenovationCost', 15000);
             this.$store.commit('inputRenovationCostPerMonth', 25);
@@ -7422,8 +7422,8 @@ exports.default = {
             this.$store.commit('inputSelfCaptive', 30000);
             this.$store.commit('inputLoanInterest', 2);
             this.$store.commit('inputRuntime', 25);
-            this.$store.commit('inputPropertyTransferTax', 2);
-            this.$store.commit('inputRegisterCosts', 2);
+            this.$store.commit('inputPropertyTransferTax', 5);
+            this.$store.commit('inputRegisterCosts', 2.5);
             this.$store.commit('inputIncomeTaxRate', 45);
 
             // Invest
@@ -55819,4 +55819,4 @@ new _vue2.default({
     }
 });
 },{"vue":"4673","./app.vue":"wlok","./store":"47HK","bootstrap/dist/css/bootstrap.css":"1gsg","bootstrap-vue/dist/bootstrap-vue.css":"1gsg","bootstrap-vue":"h7pH","@fortawesome/fontawesome-svg-core":"FlFf","@fortawesome/free-solid-svg-icons":"yAA2","@fortawesome/vue-fontawesome":"m8Qn","./utils/immorechner_util":"9jkT","vue-scrollto":"9PPm","vue-chartjs":"SFE4"}]},{},["vZyd"], null)
-//# sourceMappingURL=/app.f9aaab70.map
+//# sourceMappingURL=/app.80cfd5ec.map

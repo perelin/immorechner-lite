@@ -9,7 +9,20 @@
         "start": "npm run build && node server.js",
         "dev": "NODE_ENV=development parcel index.html --out-dir dist_dev",
         "build": "NODE_ENV=production parcel build index.html --out-dir dist --detailed-report --no-minify",
-        "prebuild": "rm -rf dist"
+        "prebuild": "rm -rf dist",
+        "test": "jest --coverage",
+        "testwatch": "jest --watchAll --coverage"
+    },
+    "jest": {
+        "collectCoverage": true,
+        "moduleFileExtensions": [
+            "js",
+            "vue"
+        ],
+        "transform": {
+            ".*\\.(vue)$": "vue-jest",
+            "^.+\\.js$": "babel-jest"
+        }
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.1.0",
@@ -23,7 +36,7 @@
         "cssnano": "^4.0.3",
         "express": "^4.16.3",
         "i": "^0.3.6",
-        "npm": "^6.2.0",
+        "npm": "^6.4.0",
         "numeral": "^2.0.6",
         "path": "^0.12.7",
         "serve-static": "^1.13.2",
@@ -36,14 +49,19 @@
     },
     "devDependencies": {
         "@vue/component-compiler-utils": "^2.1.0",
+        "@vue/test-utils": "^1.0.0-beta.24",
         "babel-core": "^6.26.3",
+        "babel-jest": "^23.4.2",
         "babel-plugin-syntax-dynamic-import": "^6.18.0",
         "babel-plugin-transform-object-rest-spread": "^6.26.0",
         "babel-preset-env": "^1.7.0",
         "babel-preset-stage-3": "^6.24.1",
         "css-loader": "^0.28.7",
+        "jest": "^23.5.0",
         "parcel-bundler": "^1.9.7",
+        "vue-jest": "^2.6.0",
         "vue-loader": "^15.2.4",
-        "vue-template-compiler": "^2.5.16"
+        "vue-template-compiler": "^2.5.16",
+        "vue-test-utils": "^1.0.0-beta.11"
     }
 }

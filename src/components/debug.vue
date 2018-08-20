@@ -24,7 +24,7 @@ export default {
             this.$store.commit('inputCurrentRent', 400)
             // Apartment
             this.$store.commit('inputPurchasePrice', 100000)
-            this.$store.commit('inputCourtage', 2)
+            this.$store.commit('inputCourtage', 3)
             this.$store.commit('inputSquareMeters', 60)
             this.$store.commit('inputRenovationCost', 15000)
             this.$store.commit('inputRenovationCostPerMonth', 25)
@@ -37,8 +37,8 @@ export default {
             this.$store.commit('inputSelfCaptive', 30000)
             this.$store.commit('inputLoanInterest', 2)
             this.$store.commit('inputRuntime', 25)
-            this.$store.commit('inputPropertyTransferTax', 2)
-            this.$store.commit('inputRegisterCosts', 2)
+            this.$store.commit('inputPropertyTransferTax', 5)
+            this.$store.commit('inputRegisterCosts', 2.5)
             this.$store.commit('inputIncomeTaxRate', 45)
 
             // Invest
