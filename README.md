@@ -65,6 +65,8 @@ devCrossNet
 just JSON.stringify it
 https://github.com/devCrossNet/chaptr/blob/master/src/app/home/Home/Home.vue#L118
 
+
+
 ### Important
 
 https://github.com/parcel-bundler/parcel/issues/1363 
@@ -101,3 +103,4 @@ https://vuex.vuejs.org/guide/testing.html
 
 https://vue-test-utils.vuejs.org/guides/testing-single-file-components-with-jest.html
 
+https://stackoverflow.com/a/24273055/55049

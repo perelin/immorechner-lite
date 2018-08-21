@@ -37,7 +37,9 @@ export default {
         return yearlyLoanRate
     },
     monthlyLoanRate(state, getters) {
+        //return getters.yearlyLoanRate
         return getters.yearlyLoanRate / 12
+            //return 20
     },
     totalInterests(state, getters) {
         return getters.yearlyLoanRate * state.runtime - getters.loanAmount
@@ -50,14 +52,17 @@ export default {
         return monthlyInterests
     },
     // Basic Letting
+    houseMoneyFoldable(state, getters) {
+        return state.houseMoney * state.houseMoneyFoldablePercent
+    },
     houseMoneyNotFoldable(state, getters) {
-        return state.houseMoney - state.houseMoneyFoldable
+        return state.houseMoney - getters.houseMoneyFoldable
     },
     totalRenovationCostPerMonth(state, getters) {
         return state.renovationCostPerMonth * state.squareMeters / 12
     },
     burdenPerMonthLetting(state, getters) {
-        let burden = state.rentalIncome - getters.monthlyLoanRate - getters.totalRenovationCostPerMonth - state.houseMoney + state.houseMoneyFoldable
+        let burden = state.rentalIncome - getters.monthlyLoanRate - getters.totalRenovationCostPerMonth - state.houseMoney + getters.houseMoneyFoldable
         return immoUtils.checkIfValidNumber(burden)
     },
     burdenPerYearInclTaxLetting(state, getters) {
@@ -72,18 +77,18 @@ export default {
         return taxSavingsAmortizationPerYear / 12 * -1
     },
     incomeDemiseLetting(state, getters) {
-        return -getters.monthlyLoanRate +
-            state.rentalIncome -
-            getters.totalRenovationCostPerMonth -
-            state.houseMoney +
-            state.houseMoneyFoldable +
-            getters.taxSavingsAmortizationLetting
+        return state.rentalIncome - getters.monthlyInterests - getters.houseMoneyNotFoldable - getters.totalRenovationCostPerMonth
     },
+    taxesLetting(state, getters) {
+        let taxes = (getters.incomeDemiseLetting + getters.taxSavingsAmortizationLetting - (state.propertyTaxPerYear / 12)) * state.incomeTaxRate
+        return taxes
+    },
+
     totalTaxSavingsLetting(state, getters) {
-        return getters.incomeDemiseLetting * state.incomeTaxRate / 100 * -1
+        return getters.incomeDemiseLetting * state.incomeTaxRate * -1
     },
     totalAdditionalPaymentLetting(state, getters) {
-        return getters.burdenPerMonthLetting + getters.totalTaxSavingsLetting
+        return getters.burdenPerMonthLetting - getters.taxesLetting
     },
     increaseInValueLetting(state, getters) {
         let increaseInValueLetting = getters.loanAmount / 12 / state.runtime
@@ -93,7 +98,7 @@ export default {
         return increaseInValueLetting
     },
     resumeLetting(state, getters) {
-        return getters.burdenPerMonthLetting + getters.totalTaxSavingsLetting + getters.increaseInValueLetting
+        return getters.burdenPerMonthLetting - getters.taxesLetting + getters.increaseInValueLetting
     },
     yieldLetting(state, getters) {
         let yieldLetting = getters.resumeLetting * 12 / getters.loanAmount * 100

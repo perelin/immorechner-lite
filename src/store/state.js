@@ -13,7 +13,7 @@ export default {
     renovationCostPerMonth: 0,
     rentalIncome: 0,
     houseMoney: 0,
-    houseMoneyFoldable: 0,
+    houseMoneyFoldablePercent: 0.63,
     residentialShare: 0.75,
     amortization: 0.02, // -> https://ratgeber.immowelt.de/a/steuern-sparen-mit-immobilien-afa-nutzen.html
     rentalSavings: 0,
@@ -24,7 +24,8 @@ export default {
     loanType: "",
     propertyTransferTax: 0,
     registerCosts: 0,
-    incomeTaxRate: 0,
+    incomeTaxRate: 0.45,
     // Investment
-    investInterest: 0
+    investInterest: 0,
+    propertyTaxPerYear: 84
 }

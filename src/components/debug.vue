@@ -39,7 +39,7 @@ export default {
             this.$store.commit('inputRuntime', 25)
             this.$store.commit('inputPropertyTransferTax', 5)
             this.$store.commit('inputRegisterCosts', 2.5)
-            this.$store.commit('inputIncomeTaxRate', 45)
+            this.$store.commit('inputIncomeTaxRate', 0.45)
 
             // Invest
             this.$store.commit('inputInvestInterest', 6)
