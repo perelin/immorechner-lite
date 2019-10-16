@@ -8,6 +8,15 @@ LohntSichDas.de/Rente
 
 
 
+## Deployment
+
+### Heroku 
+
+With a static heroku site
+https://gist.github.com/hone/24b06869b4c1eca701f9
+https://cli.vuejs.org/guide/deployment.html#heroku 
+
+
 ## Build Setup Vue-CLI
 
 npm run serve

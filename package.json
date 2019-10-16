@@ -8,9 +8,6 @@
         "serve": "vue-cli-service serve",
         "build": "vue-cli-service build",
         "start": "npm run build && node server.js",
-        "server_parcel": "NODE_ENV=production node server.js",
-        "dev_parcel": "NODE_ENV=development parcel ./public/index.html --out-dir dist_dev",
-        "build_parcel": "NODE_ENV=production parcel build ./public/index.html --out-dir dist --detailed-report --no-minify",
         "prebuild": "rm -rf dist",
         "test": "jest --coverage",
         "testwatch": "jest --watchAll --coverage"
@@ -61,7 +58,6 @@
         "babel-preset-stage-3": "^6.24.1",
         "css-loader": "^0.28.7",
         "jest": "^23.5.0",
-        "parcel-bundler": "^1.12.3",
         "vue-jest": "^2.6.0",
         "vue-loader": "^15.2.4",
         "vue-template-compiler": "^2.5.16",
