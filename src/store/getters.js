@@ -1,9 +1,6 @@
 import immoUtils from './../utils/immorechner_util'
 
 export default {
-    calculation01(state) {
-        return state.purchasePrice * state.courtage
-    },
     // Basic Purchase
     totalClosingCostsPercent(state) {
         return state.courtage + state.propertyTransferTax + state.registerCosts
@@ -83,36 +80,25 @@ export default {
         let taxes = (getters.incomeDemiseLetting + getters.taxSavingsAmortizationLetting - (state.propertyTaxPerYear / 12)) * state.incomeTaxRate
         return taxes
     },
-
-    totalTaxSavingsLetting(state, getters) {
-        return getters.incomeDemiseLetting * state.incomeTaxRate * -1
-    },
     totalAdditionalPaymentLetting(state, getters) {
         return getters.burdenPerMonthLetting - getters.taxesLetting
     },
     increaseInValueLetting(state, getters) {
         let increaseInValueLetting = getters.loanAmount / 12 / state.runtime
-        if (isNaN(increaseInValueLetting)) {
-            increaseInValueLetting = 0
-        }
-        return increaseInValueLetting
+        return immoUtils.checkIfValidNumber(increaseInValueLetting)
     },
-    resumeLetting(state, getters) {
+    resultLetting(state, getters) {
         return getters.burdenPerMonthLetting - getters.taxesLetting + getters.increaseInValueLetting
     },
-    yieldLetting(state, getters) {
-        let yieldLetting = getters.resumeLetting * 12 / getters.loanAmount * 100
-        if (!isFinite(yieldLetting)) {
-            yieldLetting = 0
-        }
-        return yieldLetting
+    returnLetting(state, getters) {
+        let returnLetting = getters.resultLetting * 12 / getters.loanAmount * 100
+        return immoUtils.checkIfValidNumber(returnLetting)
     },
-
-    resumeLettingAfterRuntime(state, getters) {
-        return getters.resumeLetting * 12 * state.runtime
+    resultLettingAfterRuntime(state, getters) {
+        return getters.resultLetting * 12 * state.runtime
     },
     returnLettingAfterRuntime(state, getters) {
-        let burden = getters.resumeLetting / getters.burdenPerMonthLetting
+        let burden = getters.resultLetting / getters.burdenPerMonthLetting
         return immoUtils.checkIfValidNumber(burden)
     },
     burdenPerMonthLettingOwnership(state, getters) {
@@ -151,4 +137,8 @@ export default {
     resumeInvestAfterRuntime(state, getters) {
         return getters.resumeInvest * 12 * state.runtime
     },
+    // TRENNER
+    yieldRentGrossYear(state) {
+        return state.rentColdNetYear / state.priceProperty
+    }
 }

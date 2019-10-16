@@ -1,7 +1,7 @@
 <template>
-<footer class="footer bg-primary fixed-bottom">
+<footer class="footer bg-light">
     <div class="container d-flex">
-        <div class="text-light">&copy; 2018 ImmoRechner</div> <small class="ml-auto">{{ versionFromEnv }}</small>
+        <div>&copy; 2019 <font-awesome-icon icon="home" /> Immo-Rechner</div> <small class="ml-auto">{{ versionFromEnv }}</small>
     </div>
 </footer>
 </template>
@@ -38,24 +38,20 @@ export default {
 </script>
 
 <style>
+
+
 html {
-    position: relative;
-    min-height: 100%;
+  position: relative;
+  min-height: 100%;
 }
-
 body#immorechner {
-    margin-bottom: 80px;
-    /* Margin bottom by footer height */
+  margin-bottom: 60px; /* Margin bottom by footer height */
 }
-
 .footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    /* Set the fixed height of the footer here */
-    line-height: 60px;
-    /* Vertically center the text there */
-    background-color: #f5f5f5;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Set the fixed height of the footer here */
+  line-height: 60px; /* Vertically center the text there */
 }
 </style>

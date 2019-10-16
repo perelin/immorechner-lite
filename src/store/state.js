@@ -1,3 +1,7 @@
+// IMPORTANT: 
+// numbers must be per year where it makes sense
+// percents are always 0.x -> x%
+
 export default {
     count: 2,
     // Basics
@@ -27,5 +31,8 @@ export default {
     incomeTaxRate: 0.45,
     // Investment
     investInterest: 0,
-    propertyTaxPerYear: 84
+    propertyTaxPerYear: 84,
+    TRENNER: 0,
+    priceProperty: 100000,
+    rentColdNetYear: 3000
 }

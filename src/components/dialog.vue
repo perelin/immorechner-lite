@@ -4,6 +4,13 @@
     <div class="row justify-content-lg-center">
         <div class="col-lg-9 col-xl-8">
 
+            <div class="row" id="dialog-yield-rent-gross-year">
+                <div class="col mb-3">
+                    <dialog-yield-rent-gross-year-component />
+                </div>
+            </div>
+
+            <!--
             <div class="row" id="dialog-data">
                 <div class="col mb-3">
                     <dialog-data-component />
@@ -27,26 +34,10 @@
                     <dialog-alternatives-component />
                 </div>
             </div>
-
+-->
         </div>
     </div>
-    <!-- <div class="row">
-        <div class="col-lg-3 mb-3">
-            <dialog-data-component />
-        </div>
 
-        <div class="col-lg-3 mb-3">
-            <dialog-payback-component />
-        </div>
-
-        <div class="col-lg-3 mb-3">
-            <dialog-return-component />
-        </div>
-        
-        <div class="col-lg-3 mb-3">
-            <dialog-ownership-component />
-        </div>
-    </div> -->
 </div>
 </template>
 
@@ -55,6 +46,7 @@ import DialogDataComponent from './dialog_data.vue'
 import DialogPaybackComponent from './dialog_payback.vue'
 import DialogAlternativesComponent from './dialog_alternatives.vue'
 import DialogOwnershipComponent from './dialog_ownership.vue'
+import DialogYieldRentGrossYearComponent from './dialog_yield_rent_gross.vue'
 
 export default {
     components: {
@@ -62,6 +54,7 @@ export default {
         DialogPaybackComponent,
         DialogAlternativesComponent,
         DialogOwnershipComponent,
+        DialogYieldRentGrossYearComponent
     }
 }
 </script>

@@ -60,5 +60,12 @@ export default {
     // Investment
     inputInvestInterest(state, value) {
         state.investInterest = value
+    },
+    //TRENNER
+    inputPriceProperty(state, value) {
+        state.priceProperty = value
+    },
+    inputRentColdNetYear(state, value) {
+        state.rentColdNetYear = value
     }
 }

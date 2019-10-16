@@ -17,33 +17,44 @@ const stateInputInit = {
     houseMoney: 150,
     renovationCostPerMonth: 20,
     rentalIncome: 500,
+    TRENNER: 0,
+    priceProperty: 100000,
+    rentColdNetYear: 6000,
 }
 const stateInput = Object.assign(State, stateInputInit)
 
+// we are rounding every float because original results 
+// from google sheets differ a tiny bit from the calculated ones
+// IMPORTANT: also round the calculated results in the tests
 const gettersResults = {
     totalClosingCostsPercent: 10,
     totalClosingCosts: 10000,
     totalPurchaseCost: 110000,
     loanAmount: 100000,
     pricePerSquareMeter: 2200,
-    yearlyLoanRate: 6115.67181252904,
-    monthlyLoanRate: 509.63931771075335,
-    totalInterests: 22313.436250580795,
-    monthlyInterests: 92.97265104408665,
-    houseMoneyFoldable: 94.5,
-    houseMoneyNotFoldable: 55.5,
-    totalRenovationCostPerMonth: 83.33333333333333,
-    burdenPerMonthLetting: -148.47265104408666,
+    yearlyLoanRate: Math.round(6115.67),
+    monthlyLoanRate: Math.round(509.63),
+    totalInterests: Math.round(22313.43),
+    monthlyInterests: Math.round(92.97),
+    houseMoneyFoldable: Math.round(94.5),
+    houseMoneyNotFoldable: Math.round(55.5),
+    totalRenovationCostPerMonth: Math.round(83.33),
+    burdenPerMonthLetting: Math.round(-148.47),
     burdenPerYearInclTaxLetting: 0,
-    taxSavingsAmortizationLetting: -137.5,
-    incomeDemiseLetting: 268.19401562258,
-    taxesLetting: 55.66230703016101,
-    totalAdditionalPaymentLetting: -204.13495807424766,
-    resumeLetting: 212.53170859241902,
-    increaseInValueLetting: 416.6666666666667,
-    burdenPerYearInclTaxLetting: -2449.619496890972
-
+    taxSavingsAmortizationLetting: Math.round(-137.5),
+    incomeDemiseLetting: Math.round(268.19),
+    taxesLetting: Math.round(55.66),
+    totalAdditionalPaymentLetting: Math.round(-204.13),
+    resultLetting: Math.round(212.53),
+    increaseInValueLetting: Math.round(416.66),
+    burdenPerYearInclTaxLetting: Math.round(-2449.61),
+    returnLetting: Math.round(2.55),
+    resultLettingAfterRuntime: Math.round(51007.61),
+    TRENNER: 0,
+    yieldRentGrossYear: 0.06
 }
+
+
 
 Vue.use(Vuex)
 
@@ -60,155 +71,135 @@ beforeEach(() => {
     testStore.replaceState(stateInputRest)
 });
 
+// tests
+
+test('yieldRentGrossYear', () => {
+    const result = testStore.getters.yieldRentGrossYear
+    expect(result).toBe(gettersResults.yieldRentGrossYear)
+});
+
+// TRENNER
+
 test('totalClosingCostsPercent', () => {
-
     const result = testStore.getters.totalClosingCostsPercent
-
     expect(result).toBe(gettersResults.totalClosingCostsPercent)
 
 })
 
 test('totalClosingCosts', () => {
-
     const result = testStore.getters.totalClosingCosts
-
     expect(result).toBe(gettersResults.totalClosingCosts)
 
 })
 
 test('totalPurchaseCost', () => {
-
     const result = testStore.getters.totalPurchaseCost
-
     expect(result).toBe(gettersResults.totalPurchaseCost)
 })
 
 test('pricePerSquareMeter', () => {
-
     const result = testStore.getters.pricePerSquareMeter
-
     expect(result).toBe(gettersResults.pricePerSquareMeter)
 })
 
 test('loanAmount', () => {
-
     const result = testStore.getters.loanAmount
-
     expect(result).toBe(gettersResults.loanAmount)
 })
 
 test('yearlyLoanRate', () => {
-
     const result = testStore.getters.yearlyLoanRate
-
-    expect(result).toBe(gettersResults.yearlyLoanRate)
+    expect(Math.round(result)).toBe(gettersResults.yearlyLoanRate)
 })
 
 test('yearlyLoanRate is NaN', () => {
-
     testStore.commit('inputLoanInterest', NaN)
-
     const result = testStore.getters.yearlyLoanRate
-
     expect(result).toBe(0)
 })
 
 test('monthlyLoanRate', () => {
-
     const result = testStore.getters.monthlyLoanRate
-
-    expect(result).toBe(gettersResults.monthlyLoanRate)
+    expect(Math.round(result)).toBe(gettersResults.monthlyLoanRate)
 })
 
 test('totalInterests', () => {
-
     const result = testStore.getters.totalInterests
-
-    expect(result).toBe(gettersResults.totalInterests)
+    expect(Math.round(result)).toBe(gettersResults.totalInterests)
 })
 
 test('monthlyInterests is NaN', () => {
-
     testStore.commit('inputRuntime', NaN)
-
     const result = testStore.getters.monthlyInterests
-
     expect(result).toBe(0)
 })
 
 test('houseMoneyFoldable', () => {
-
     const result = testStore.getters.houseMoneyFoldable
-
-    expect(result).toBe(gettersResults.houseMoneyFoldable)
+    expect(Math.round(result)).toBe(gettersResults.houseMoneyFoldable)
 })
 
 test('houseMoneyNotFoldable', () => {
-
     const result = testStore.getters.houseMoneyNotFoldable
-
-    expect(result).toBe(gettersResults.houseMoneyNotFoldable)
+    expect(Math.round(result)).toBe(gettersResults.houseMoneyNotFoldable)
 })
 
 test('totalRenovationCostPerMonth', () => {
-
     const result = testStore.getters.totalRenovationCostPerMonth
-
-    expect(result).toBe(gettersResults.totalRenovationCostPerMonth)
+    expect(Math.round(result)).toBe(gettersResults.totalRenovationCostPerMonth)
 })
 test('burdenPerMonthLetting', () => {
-
     const result = testStore.getters.burdenPerMonthLetting
-
-    expect(result).toBe(gettersResults.burdenPerMonthLetting)
+    expect(Math.round(result)).toBe(gettersResults.burdenPerMonthLetting)
 
 })
 test('burdenPerYearInclTaxLetting', () => {
-
     const result = testStore.getters.burdenPerYearInclTaxLetting
-
-    expect(result).toBe(gettersResults.burdenPerYearInclTaxLetting)
+    expect(Math.round(result)).toBe(gettersResults.burdenPerYearInclTaxLetting)
 })
 
 
 test('incomeDemiseLetting', () => {
-
     const result = testStore.getters.incomeDemiseLetting
-
-    expect(result).toBe(gettersResults.incomeDemiseLetting)
+    expect(Math.round(result)).toBe(gettersResults.incomeDemiseLetting)
 })
 
 test('taxSavingsAmortizationLetting', () => {
-
     const result = testStore.getters.taxSavingsAmortizationLetting
-
-    expect(result).toBe(gettersResults.taxSavingsAmortizationLetting)
+    expect(Math.round(result)).toBe(gettersResults.taxSavingsAmortizationLetting)
 })
 
 test('taxesLetting', () => {
-
     const result = testStore.getters.taxesLetting
-
-    expect(result).toBe(gettersResults.taxesLetting)
+    expect(Math.round(result)).toBe(gettersResults.taxesLetting)
 })
 
 test('totalAdditionalPaymentLetting', () => {
-
     const result = testStore.getters.totalAdditionalPaymentLetting
-
-    expect(result).toBe(gettersResults.totalAdditionalPaymentLetting)
+    expect(Math.round(result)).toBe(gettersResults.totalAdditionalPaymentLetting)
 })
 
 test('increaseInValueLetting', () => {
-
     const result = testStore.getters.increaseInValueLetting
-
-    expect(result).toBe(gettersResults.increaseInValueLetting)
+    expect(Math.round(result)).toBe(gettersResults.increaseInValueLetting)
 })
 
-test('resumeLetting', () => {
+test('resultLetting', () => {
+    const result = testStore.getters.resultLetting
+    expect(Math.round(result)).toBe(gettersResults.resultLetting)
+})
 
-    const result = testStore.getters.resumeLetting
+test('returnLetting', () => {
+    const result = testStore.getters.returnLetting
+    expect(Math.round(result)).toBe(gettersResults.returnLetting)
+})
 
-    expect(result).toBe(gettersResults.resumeLetting)
+test('resultLettingAfterRuntime', () => {
+    const result = testStore.getters.resultLettingAfterRuntime
+    expect(Math.round(result)).toBe(gettersResults.resultLettingAfterRuntime)
+})
+
+test('resultLettingAfterRuntime', () => {
+    const result = testStore.getters.resultLettingAfterRuntime
+    expect(Math.round(result)).toBe(gettersResults.resultLettingAfterRuntime)
 })

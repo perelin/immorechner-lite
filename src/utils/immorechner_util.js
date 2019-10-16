@@ -18,7 +18,7 @@ export default {
     formatPercentMixin: {
         methods: {
             formatPercent: function(value) {
-                return Number(value / 100).toLocaleString(undefined, { style: 'percent', minimumFractionDigits: 2 })
+                return Number(value).toLocaleString(undefined, { style: 'percent', minimumFractionDigits: 2 })
             }
         }
     }

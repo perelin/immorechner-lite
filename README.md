@@ -8,6 +8,12 @@ LohntSichDas.de/Rente
 
 
 
+## Build Setup Vue-CLI
+
+npm run serve
+vue ui
+
+
 ## Build Setup
 
 ``` bash
@@ -25,8 +31,31 @@ For detailed explanation on how things work, consult the [docs for vue-loader](h
 
 ## Todos
 
+Monat vs Jahr? Im Code immer Jahr, zur Ausgabe/Eingabe Monat wo angebracht
+Tilgung vs Laufzeit?
+Liquidität/Cashflow als Begriff verwenden
+
+## Names
+
+https://docs.google.com/spreadsheets/d/1O1Kke6nAGTxTE5G9zt27n3CYPwQrn6mWK348ml99PFs/edit#gid=48529872
+
+Bruttomietrendite pa: yieldRentGrossYear
+Nettomietrendite pa: yieldRentNetYear
+Kaufpreis: priceProperty
+Nettokaltmiete pa: rentColdNetYear
 
 ## Dev Notes
+
+### 2019-10-11
+
+2do: on change month/year yiled value needs to update
+
+### 2019-10-08
+
+parcel is not working for some reason. Some Components are missing.
+vue-cli is working fine
+
+### Old
 
 https://www.whatismydayrate.com/
 

@@ -1,20 +1,16 @@
 <template>
 <div class="jumbotron text-dark">
 
+    <div class="card col-md-10 col-lg-8 col-xl-7 px-3 py-3 mx-auto" id="stage">
 
-
-            <div class="card col-md-10 col-lg-8 col-xl-7 px-3 py-3 mx-auto" id="stage">
-
-                <h1 class="display-4">ImmoRechner
-                    <font-awesome-icon icon="home" />
-                </h1>
-                <p class="lead">Die Einschätzung für Ihren Immo-Invest: Lohnt sich das? Wie hoch ist die Rendite? Was sind die Alternativen?</p>
-                <hr />
-                <p>Schnell und einfach zum Ergebnis. Einfach unten im Text die markierten Werte für deinen Immo-Invest anpassen und sofort die erste Einschätzung bekommen. Reicht nicht? Dann einfach alles bis ins kleinste Detail nachjustieren.</p>
-                <p class="lead">
-                    <a class="btn btn-primary btn-lg" href="#dialog" role="button" v-scroll-to="'#dialog-data'">Lohnt sich das?</a>
-                    <debug-component />
-                </p>
+        <h1 class="display-4">
+            <font-awesome-icon icon="home" /> Immo-Rechner
+        </h1>
+        <p class="lead">Die Einschätzung für Ihren Immo-Invest: Lohnt sich das? Wie hoch ist die Rendite?</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="#dialog" role="button" v-scroll-to="'#dialog-yield-rent-gross-year'">Lohnt sich das?</a>
+            <!-- <debug-component /> -->
+        </p>
 
     </div>
 
