@@ -11,6 +11,7 @@
         "serve": "vue-cli-service serve",
         "build": "vue-cli-service build",
         "start": "npm run build && node server.js",
+        "startold": "webpack-dev-server",
         "prebuild": "rm -rf dist",
         "test": "jest --coverage",
         "testwatch": "jest --watchAll --coverage"
@@ -50,9 +51,9 @@
         "vuex": "^3.1.1"
     },
     "devDependencies": {
+        "@vue/cli-service": "^4.0.0",
         "@vue/component-compiler-utils": "^3.0.0",
         "@vue/test-utils": "^1.0.0-beta.24",
-        "@vue/cli-service": "^4.0.0",
         "babel-core": "^6.26.3",
         "babel-jest": "^24.9.0",
         "babel-plugin-syntax-dynamic-import": "^6.18.0",
@@ -64,6 +65,7 @@
         "vue-jest": "^3.0.5",
         "vue-loader": "^15.7.1",
         "vue-template-compiler": "^2.6.10",
-        "vue-test-utils": "^1.0.0-beta.11"
+        "vue-test-utils": "^1.0.0-beta.11",
+        "webpack-cli": "^3.3.9"
     }
 }

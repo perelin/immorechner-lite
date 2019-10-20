@@ -26,7 +26,7 @@
         </div>
         <div class="card-footer text-right ">
             Die Bruttomietrendite beträgt <span class="font-size-lg display-1 font-weight-bold badge badge-info">{{yieldRentGrossYearComputed}}</span><br />
-            <span class="text-muted small">Das ergibt sich aus Nettokaltmiete / Kaufpreis</span>
+            <span class="text-muted small">Das ergibt sich aus (Nettokaltmiete / Kaufpreis)</span>
         </div>
     </div>
 </div>
