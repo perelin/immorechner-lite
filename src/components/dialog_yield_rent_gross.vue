@@ -2,8 +2,9 @@
 <div>
     <div class="card">
         <div class="card-header">
-            Bruttomietrendite <br />
-            <small class="text-muted mb-3">Die erste grobe Einschätzung. Lohnt es sich, oder nicht?</small>
+            Bruttomietrendite <br /><small class="text-muted mb-3">Die erste grobe Einschätzung. Lohnt es sich, oder nicht? Die anfängliche Bruttomietrendite ist das Verhältnis der Jahreskaltmiete (ohne Betriebskosten) zum Kaufpreis.
+
+            </small>
         </div>
         <div class="card-body">
             <form>
@@ -24,13 +25,16 @@
                 </b-form-group>
             </form>
         </div>
-        <div class="card-footer text-right ">
-            Die Bruttomietrendite beträgt <span class="font-size-lg display-1 font-weight-bold badge badge-info">{{yieldRentGrossYearComputed}}</span><br />
-            <span class="text-muted small">Das ergibt sich aus (Nettokaltmiete / Kaufpreis)</span>
+        <div class="card-footer text-right " style="display: flex; justify-content: flex-end">
+            <div style="max-width: 500px;"> Bruttomietrendite beträgt <span class="font-size-lg display-1 font-weight-bold badge badge-info">{{yieldRentGrossYearComputed}}</span><br />
+            <span class="text-muted small">Wir glauben alles über 5% sollte man sich genauer ansehen! Für eine nähere Betrachtung hilft die Berechnung der Nettomietrendite im nächsten Schritt.</span>
+            </div>
         </div>
     </div>
 </div>
 </template>
+
+Die anfängliche Bruttomietrendite ist das Verhältnis der Jahreskaltmiete (ohne Betriebskosten) zum Kaufpreis.
 
 <script>
 import ImmorechnerUtils from '../utils/immorechner_util'
